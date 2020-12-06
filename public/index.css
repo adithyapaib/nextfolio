@@ -13,7 +13,7 @@
 }
 
 .main {
-  background: black;
+  background: #293241;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -33,12 +33,12 @@
   margin-left: 5%;
   font-weight: 700;
   text-transform: uppercase;
-  color: #FE2057;
+  color: #e63946;
   letter-spacing: 10px;
 }
 
 .main .me::first-letter {
-  color: #ffffff;
+  color: #e0fbfc;
   font-size: 3em;
   letter-spacing: 15px;
 }

@@ -3,6 +3,9 @@
     font-family: Adam;
     src: url("../font/Adam.otf") format("opentype");
 }
+$bg: #293241;
+$primary: #e63946;
+$secondary: #e0fbfc;
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +15,7 @@
 }
 .main
 {
-    background: rgb(0, 0, 0);
+    background: $bg;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -25,10 +28,10 @@
         margin-left: 5%;
         font-weight: 700;
         text-transform: uppercase;
-        color:  #FE2057;
+        color: $primary;
         letter-spacing: 10px;
         &::first-letter {
-            color: #ffffff;
+            color: $secondary;
             font-size: 3em;
             letter-spacing: 15px;
             
