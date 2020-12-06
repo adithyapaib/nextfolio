@@ -3,29 +3,34 @@
     font-family: Adam;
     src: url("../font/Adam.otf") format("opentype");
 }
-$bg: #293241;
-$primary: #e63946;
-$secondary: #e0fbfc;
+$bg: #fcf1f1;
+$primary: #1a1c20;
+$secondary: #f9813a;
 *{
     padding: 0;
     margin: 0;
-    /* font-family: 'Poppins', sans-serif; */
     font-weight: bold;
     font-family: Adam;
+    
+}
+body
+{
+    max-width: 100%;
 }
 .main
 {
     background: $bg;
-    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     .me 
     {
         text-align: left;
-        width: 100%;
-        margin-left: 5%;
+        align-self: flex-start;
+        padding-left: 5%;
         font-weight: 700;
         text-transform: uppercase;
         color: $primary;
@@ -36,6 +41,15 @@ $secondary: #e0fbfc;
             letter-spacing: 15px;
             
           }
+    }
+    .job 
+    {
+        align-self: flex-start;
+        text-align: left;
+        align-self: flex-start;
+        padding-left: 5%;
+        margin-top: 25px;
+        color: $secondary;
     }
     
 }
