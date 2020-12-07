@@ -82,6 +82,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .main .landing {
+    /* .moon
+            {
+                display: none;
+            } */
+  }
   .main .landing .me {
     font-size: 1.5em;
   }
@@ -90,9 +96,6 @@
   }
   .main .landing .job {
     font-size: 1.3em;
-  }
-  .main .landing .moon {
-    display: none;
   }
 }
 
