@@ -12,7 +12,18 @@
 }
 
 .main {
+  width: 100vh;
+  height: 100vw;
   background: #fdfffc;
+  -webkit-transform: rotate(-90deg) translateX(-100vh);
+          transform: rotate(-90deg) translateX(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .main .landing {
@@ -32,6 +43,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 150vw;
+  -webkit-transform: rotate(90deg) translateY(-100vh);
+          transform: rotate(90deg) translateY(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 
 .main .landing .me {
@@ -78,5 +94,16 @@
   .main .landing .moon {
     display: none;
   }
+}
+
+::-webkit-scrollbar {
+  background: #fdfffc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ef476f;
+  margin-left: 10px;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=index.css.map */

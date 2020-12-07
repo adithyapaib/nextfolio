@@ -16,18 +16,29 @@ $secondary: #ef476f;
 
 .main
 {
+    width: 100vh;
+  height: 100vw;
     background: $bg;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     
     
     .landing
     {
-        
-        height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 150vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
     
         .me 
         {
@@ -84,3 +95,19 @@ $secondary: #ef476f;
         }
     }
 }
+::-webkit-scrollbar {
+    background: $bg;
+    border-radius: 10px;
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $secondary;
+    margin-left: 10px;
+    border-radius: 30px;
+
+               
+  }
+ 
+  
+  
+  
