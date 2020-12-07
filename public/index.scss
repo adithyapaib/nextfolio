@@ -5,7 +5,7 @@
 }
 $bg: #fdfffc;
 $primary: #000000;
-$secondary: #fb742d;
+$secondary: #ef476f;
 *{
     padding: 0;
     margin: 0;
@@ -13,43 +13,74 @@ $secondary: #fb742d;
     font-family: Adam;
     
 }
-body
-{
-    max-width: 100%;
-}
+
 .main
 {
     background: $bg;
-    height: 100vh;
+    
+    
+    .landing
+    {
+        
+        height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    .me 
-    {
-        text-align: left;
-        align-self: flex-start;
-        padding-left: 5%;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $primary;
-        letter-spacing: 10px;
-        &::first-letter {
-            color: $secondary;
-            font-size: 3em;
-            letter-spacing: 15px;
-            
-          }
-    }
-    .job 
-    {
-        align-self: flex-start;
-        text-align: left;
-        align-self: flex-start;
-        padding-left: 5%;
-        margin-top: 25px;
-        color: $primary;
-    }
     
+        .me 
+        {
+            text-align: left;
+            align-self: flex-start;
+            padding-left: 5%;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $primary;
+            letter-spacing: 10px;
+            &::first-letter {
+                color: $secondary;
+                font-size: 3em;
+                letter-spacing: 15px;
+                
+              }
+        }
+        .job 
+        {
+            align-self: flex-start;
+            text-align: left;
+            align-self: flex-start;
+            padding-left: 5%;
+            margin-top: 25px;
+            color: $primary;
+        }
+        .moon 
+        {
+            width: 50%;
+        }
+    }
+   
+    
+    
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        .landing{
+            .me{
+                font-size: 1.5em;
+                &:first-letter
+                {
+                    font-size: 3em;
+                }
+            }
+            .job 
+            {
+                font-size: 1.3em;
+            }
+            .moon
+            {
+                display: none;
+            }
+        }
+    }
 }

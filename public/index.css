@@ -11,12 +11,11 @@
   font-family: Adam;
 }
 
-body {
-  max-width: 100%;
-}
-
 .main {
   background: #fdfffc;
+}
+
+.main .landing {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +34,7 @@ body {
           flex-direction: column;
 }
 
-.main .me {
+.main .landing .me {
   text-align: left;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -46,13 +45,13 @@ body {
   letter-spacing: 10px;
 }
 
-.main .me::first-letter {
-  color: #fb742d;
+.main .landing .me::first-letter {
+  color: #ef476f;
   font-size: 3em;
   letter-spacing: 15px;
 }
 
-.main .job {
+.main .landing .job {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-align: left;
@@ -60,5 +59,24 @@ body {
   padding-left: 5%;
   margin-top: 25px;
   color: #000000;
+}
+
+.main .landing .moon {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .main .landing .me {
+    font-size: 1.5em;
+  }
+  .main .landing .me:first-letter {
+    font-size: 3em;
+  }
+  .main .landing .job {
+    font-size: 1.3em;
+  }
+  .main .landing .moon {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */
