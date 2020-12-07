@@ -83,6 +83,8 @@
 
 @media only screen and (max-width: 600px) {
   .main .landing {
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 300vw;
     /* .moon
             {
