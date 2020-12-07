@@ -12,8 +12,9 @@
 }
 
 .main {
-  width: 100vh;
+  width: 100vw;
   height: 100vw;
+  background: #000;
   background: #fdfffc;
   -webkit-transform: rotate(-90deg) translateX(-100vh);
           transform: rotate(-90deg) translateX(-100vh);
@@ -86,19 +87,27 @@
   .main {
     -webkit-transform: none;
             transform: none;
+    width: auto;
+    height: 100vh;
   }
   .main .landing {
+    height: 100vh;
     -webkit-transform: none;
             transform: none;
   }
   .main .landing .me {
+    width: 100vw;
     font-size: 1.5em;
   }
   .main .landing .me:first-letter {
     font-size: 3em;
   }
   .main .landing .job {
+    width: 100vw;
     font-size: 1.3em;
+  }
+  .main .landing .moon {
+    display: none;
   }
 }
 

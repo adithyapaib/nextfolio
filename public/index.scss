@@ -16,8 +16,9 @@ $secondary: #ef476f;
 
 .main
 {
-    width: 100vh;
+    width: 100vw;
     height: 100vw;
+    background: #000;
     background: $bg;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
@@ -78,9 +79,13 @@ $secondary: #ef476f;
 @media only screen and (max-width: 600px) {
     .main{
         transform: none;
+        width: auto;
+        height: 100vh;
         .landing{
+            height: 100vh;
             transform: none;
             .me{
+                width: 100vw;
                 font-size: 1.5em;
                 &:first-letter
                 {
@@ -89,12 +94,14 @@ $secondary: #ef476f;
             }
             .job 
             {
+                width: 100vw;
                 font-size: 1.3em;
             }
             .moon
             {
-                
-            } 
+            display: none;
+            }
+            
         }
     }
 }
