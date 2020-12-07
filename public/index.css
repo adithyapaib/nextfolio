@@ -78,18 +78,18 @@
 }
 
 .main .landing .moon {
-  width: 50%;
+  width: 30%;
+  margin-left: -50%;
 }
 
 @media only screen and (max-width: 600px) {
+  .main {
+    -webkit-transform: none;
+            transform: none;
+  }
   .main .landing {
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 300vw;
-    /* .moon
-            {
-                display: none;
-            } */
+    -webkit-transform: none;
+            transform: none;
   }
   .main .landing .me {
     font-size: 1.5em;
