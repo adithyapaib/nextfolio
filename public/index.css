@@ -83,6 +83,7 @@
 
 @media only screen and (max-width: 600px) {
   .main .landing {
+    width: 300vw;
     /* .moon
             {
                 display: none;

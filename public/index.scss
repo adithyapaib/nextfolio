@@ -77,6 +77,7 @@ $secondary: #ef476f;
 @media only screen and (max-width: 600px) {
     .main{
         .landing{
+            width: 300vw;
             .me{
                 font-size: 1.5em;
                 &:first-letter
