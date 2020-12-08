@@ -9,6 +9,7 @@
   margin: 0;
   font-weight: bold;
   font-family: Adam;
+  scroll-behavior: smooth;
 }
 
 .main {
@@ -25,6 +26,9 @@
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 }
 
 .main .wrapper {
@@ -53,6 +57,7 @@
 }
 
 .main .wrapper .landing {
+  scroll-snap-align: start;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -107,10 +112,11 @@
 }
 
 .main .wrapper .about {
-  background: black;
+  scroll-snap-align: start;
+  background: white;
   height: 100vh;
-  width: 105vw;
-  color: white;
+  width: 100vw;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +131,7 @@
 }
 
 .main .wrapper .about h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   letter-spacing: 3px;
   width: 100%;
   margin-left: 5%;
@@ -133,10 +139,21 @@
 
 .main .wrapper .about p {
   margin-left: 5%;
-  margin-right: 5%;
+  /* font-family: poppins; */
+  font-size: 1.5em;
+  width: 50%;
+}
+
+.main .wrapper .about .img {
+  margin-left: 5%;
+}
+
+.main .wrapper .about .img img {
+  width: 60%;
 }
 
 .main .wrapper .skills {
+  scroll-snap-align: start;
   background: red;
   width: 100vw;
   height: 100vh;

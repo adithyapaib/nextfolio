@@ -11,6 +11,7 @@ $secondary: #e63946;
     margin: 0;
     font-weight: bold;
     font-family: Adam;
+    scroll-behavior: smooth;
     
 }
 
@@ -27,10 +28,15 @@ $secondary: #e63946;
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+    
     
     
     .wrapper
     {
+        
+       
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -43,6 +49,7 @@ $secondary: #e63946;
     transform-origin: top left;
       .landing
       {
+        scroll-snap-align: start;
           width: 100vw;
           height: 100vh;
           display: flex;
@@ -88,30 +95,45 @@ $secondary: #e63946;
 
       }.about
       {
-          background: rgb(0, 0, 0);
+        scroll-snap-align: start;
+
+          background: rgb(255, 255, 255);
           height: 100vh;
-          width: 105vw;
-          color: white;
+          width: 100vw;
+          color: rgb(0, 0, 0);
           display: flex;
           justify-content: flex-start;
           align-items: center;
           flex-wrap: wrap;
           
           h1 {
-              font-size: 3em;
+              font-size: 3.5em;
               letter-spacing: 3px;
               width: 100%;
               margin-left: 5%;
           }
           p {
             margin-left: 5%;
-            margin-right: 5%;
+            /* font-family: poppins; */
+            font-size: 1.5em;
+            width: 50%;
           }
+          .img
+          {margin-left: 5%;
+            img
+            {
+                width: 60%;
+                
+            }
+
+          }
+          
          
 
       }
       .skills
       {
+        scroll-snap-align: start;
           background: red;
           width: 100vw;
           height: 100vh;
