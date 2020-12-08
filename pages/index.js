@@ -15,12 +15,12 @@ maximum-scale=1.0, user-scalable=no" />
   <div className='landing'>
   <h1 className='name'>{user.name}</h1>
 <h2 className='job'>{user.job}</h2>
-   <img  src='/img/moon.svg' className='moon'></img>
+   <img  src='/img/home.svg' className='moon'></img>
   </div>
   <div className="about">
   <h1>About Me</h1>
   <div className='img'>
-  <img src="img/ill.svg"/>
+  <img src="img/goals.svg"/>
   </div>
 
   <br/>

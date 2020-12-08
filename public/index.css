@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap");
 @font-face {
   font-family: Adam;
   src: url("../font/Adam.otf") format("opentype");
@@ -108,7 +109,8 @@
   width: 41vw;
   justify-self: flex-end;
   position: absolute;
-  left: 59vw;
+  bottom: 0;
+  left: 51vw;
 }
 
 .main .wrapper .about {
@@ -140,8 +142,11 @@
 .main .wrapper .about p {
   margin-left: 5%;
   /* font-family: poppins; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 1.5em;
-  width: 50%;
+  width: 60%;
+  margin-bottom: 5%;
 }
 
 .main .wrapper .about .img {
@@ -149,7 +154,7 @@
 }
 
 .main .wrapper .about .img img {
-  width: 60%;
+  width: 50%;
 }
 
 .main .wrapper .skills {
@@ -185,6 +190,15 @@
   }
   .main .wrapper .landing .moon {
     display: none;
+  }
+  .main .wrapper .about {
+    width: 100vw;
+  }
+  .main .wrapper .about .img img {
+    width: 90%;
+  }
+  .main .wrapper .about p {
+    width: 90%;
   }
 }
 
