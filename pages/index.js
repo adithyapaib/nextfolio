@@ -7,7 +7,7 @@ export default function Hello()
 <title>{user.name} | {user.job}</title>
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
 maximum-scale=1.0, user-scalable=no" /> 
- <meta  name="theme-color" content="#3D0179"></meta>
+ <meta  name="theme-color" content="#e63946"></meta>
 <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/windows/32/000000/code.png"/>
   </HEAD>
   <div className='main'> 
