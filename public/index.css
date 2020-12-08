@@ -159,9 +159,35 @@
 
 .main .wrapper .skills {
   scroll-snap-align: start;
-  background: red;
-  width: 100vw;
+  background: white;
   height: 100vh;
+  width: 100vw;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .wrapper .skills h1 {
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.main .wrapper .skills h2 {
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  width: 100%;
+  margin-left: 5%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -181,10 +207,6 @@
   }
   .main .wrapper .landing {
     scroll-snap-align: start;
-    /* .moon
-            {
-            display: none;
-            } */
   }
   .main .wrapper .landing .name {
     width: 100vw;
@@ -196,6 +218,10 @@
   .main .wrapper .landing .job {
     width: 100vw;
     font-size: 1.3em;
+  }
+  .main .wrapper .landing .moon {
+    display: none;
+    margin-bottom: 5%;
   }
   .main .wrapper .about {
     width: 100vw;

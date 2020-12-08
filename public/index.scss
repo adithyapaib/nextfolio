@@ -140,9 +140,27 @@ $secondary: #e63946;
       .skills
       {
         scroll-snap-align: start;
-          background: red;
-          width: 100vw;
-          height: 100vh;
+        background: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100vw;
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        h1 {
+            font-size: 3.5em;
+            letter-spacing: 3px;
+            width: 100%;
+            margin-left: 5%;
+        }
+        h2 {
+            font-size: 2.5em;
+            letter-spacing: 3px;
+            width: 100%;
+            margin-left: 5%;
+        }
+       
       }
        
     }
@@ -180,10 +198,11 @@ $secondary: #e63946;
                 width: 100vw;
                 font-size: 1.3em;
             }
-            /* .moon
+             .moon
             {
             display: none;
-            } */
+            margin-bottom: 5%;
+            } 
             
         }
         .about
