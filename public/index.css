@@ -170,12 +170,17 @@
             transform: none;
     width: auto;
     height: 100vh;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
   }
   .main .wrapper {
     height: 100vh;
     -webkit-transform: none;
             transform: none;
-    width: 305vw;
+    min-width: 300vw;
+  }
+  .main .wrapper .landing {
+    scroll-snap-align: start;
   }
   .main .wrapper .landing .name {
     width: 100vw;
@@ -198,7 +203,8 @@
     width: 90%;
   }
   .main .wrapper .about p {
-    width: 90%;
+    width: 85%;
+    font-size: 1.5em;
   }
 }
 

@@ -155,14 +155,17 @@ $secondary: #e63946;
         transform: none;
         width: auto;
         height: 100vh;
+        scroll-snap-type: y mandatory;
         .wrapper
         { height: 100vh;
             transform: none;
-            width: 305vw;
+            min-width: 300vw;
            
 
         
         .landing{
+            scroll-snap-align: start;
+            
             
             .name{
                 width: 100vw;
@@ -195,7 +198,8 @@ $secondary: #e63946;
             } 
 
             p {
-                width: 90%;
+                width: 85%;
+                font-size: 1.5em;
             }
         }
         
