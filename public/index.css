@@ -109,7 +109,7 @@
 .main .wrapper .about {
   background: black;
   height: 100vh;
-  width: 100vw;
+  width: 105vw;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,14 +122,24 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 10vw;
-  padding-right: 20vw;
 }
 
 .main .wrapper .about h1 {
   font-size: 3em;
   letter-spacing: 3px;
   width: 100%;
+  margin-left: 5%;
+}
+
+.main .wrapper .about p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.main .wrapper .skills {
+  background: red;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -143,7 +153,7 @@
     height: 100vh;
     -webkit-transform: none;
             transform: none;
-    width: 100vw;
+    width: 305vw;
   }
   .main .wrapper .landing .name {
     width: 100vw;
@@ -158,9 +168,6 @@
   }
   .main .wrapper .landing .moon {
     display: none;
-  }
-  .main .wrapper .about {
-    width: 100vw;
   }
 }
 

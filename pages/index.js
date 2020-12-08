@@ -26,6 +26,10 @@ maximum-scale=1.0, user-scalable=no" />
   </p>
 
   </div>
+  <div className='skills'>
+    hello
+
+  </div>
   
   </div>
   </div>

@@ -90,21 +90,31 @@ $secondary: #e63946;
       {
           background: rgb(0, 0, 0);
           height: 100vh;
-          width: 100vw;
+          width: 105vw;
           color: white;
           display: flex;
           justify-content: flex-start;
           align-items: center;
           flex-wrap: wrap;
-          padding-left: 10vw;
-          padding-right: 20vw;
+          
           h1 {
               font-size: 3em;
               letter-spacing: 3px;
               width: 100%;
+              margin-left: 5%;
+          }
+          p {
+            margin-left: 5%;
+            margin-right: 5%;
           }
          
 
+      }
+      .skills
+      {
+          background: red;
+          width: 100vw;
+          height: 100vh;
       }
        
     }
@@ -120,7 +130,7 @@ $secondary: #e63946;
         .wrapper
         { height: 100vh;
             transform: none;
-            width: 100vw;
+            width: 305vw;
            
 
         
@@ -145,11 +155,7 @@ $secondary: #e63946;
             }
             
         }
-        .about
-        {
-            width: 100vw;
-           
-        }
+        
     }
 }
 }
