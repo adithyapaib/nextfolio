@@ -27,7 +27,7 @@
   -ms-overflow-style: none;
 }
 
-.main .landing {
+.main .wrapper {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,23 +35,43 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 150vw;
+  width: 250vw;
   -webkit-transform: rotate(90deg) translateY(-100vh);
           transform: rotate(90deg) translateY(-100vh);
   -webkit-transform-origin: top left;
           transform-origin: top left;
 }
 
-.main .landing .me {
+.main .wrapper .landing {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .wrapper .landing .name {
   text-align: left;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -62,13 +82,13 @@
   letter-spacing: 10px;
 }
 
-.main .landing .me::first-letter {
-  color: #ef476f;
+.main .wrapper .landing .name::first-letter {
+  color: #e63946;
   font-size: 3em;
   letter-spacing: 15px;
 }
 
-.main .landing .job {
+.main .wrapper .landing .job {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-align: left;
@@ -78,9 +98,27 @@
   color: #000000;
 }
 
-.main .landing .moon {
-  width: 30%;
-  margin-left: -50%;
+.main .wrapper .landing .moon {
+  width: 41vw;
+  justify-self: flex-end;
+  position: absolute;
+  left: 59vw;
+}
+
+.main .wrapper .about {
+  background: #000;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -90,23 +128,23 @@
     width: auto;
     height: 100vh;
   }
-  .main .landing {
+  .main .wrapper {
     height: 100vh;
     -webkit-transform: none;
             transform: none;
   }
-  .main .landing .me {
+  .main .wrapper .landing .name {
     width: 100vw;
     font-size: 1.5em;
   }
-  .main .landing .me:first-letter {
+  .main .wrapper .landing .name:first-letter {
     font-size: 3em;
   }
-  .main .landing .job {
+  .main .wrapper .landing .job {
     width: 100vw;
     font-size: 1.3em;
   }
-  .main .landing .moon {
+  .main .wrapper .landing .moon {
     display: none;
   }
 }
@@ -117,7 +155,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ef476f;
+  background: #e63946;
   margin-left: 10px;
   border-radius: 30px;
 }
