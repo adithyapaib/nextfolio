@@ -44,7 +44,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 250vw;
+  min-width: 200vw;
+  max-width: auto;
   -webkit-transform: rotate(90deg) translateY(-100vh);
           transform: rotate(90deg) translateY(-100vh);
   -webkit-transform-origin: top left;

@@ -37,7 +37,8 @@ $secondary: #e63946;
     align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 250vw;
+    min-width: 200vw;
+    max-width: auto;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
       .landing
