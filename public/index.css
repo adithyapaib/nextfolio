@@ -107,19 +107,29 @@
 }
 
 .main .wrapper .about {
-  background: #000;
+  background: black;
   height: 100vh;
   width: 100vw;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 10vw;
+  padding-right: 20vw;
+}
+
+.main .wrapper .about h1 {
+  font-size: 3em;
+  letter-spacing: 3px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -133,6 +143,7 @@
     height: 100vh;
     -webkit-transform: none;
             transform: none;
+    width: 100vw;
   }
   .main .wrapper .landing .name {
     width: 100vw;
@@ -148,16 +159,12 @@
   .main .wrapper .landing .moon {
     display: none;
   }
+  .main .wrapper .about {
+    width: 100vw;
+  }
 }
 
 ::-webkit-scrollbar {
-  background: #fdfffc;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #e63946;
-  margin-left: 10px;
-  border-radius: 30px;
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */

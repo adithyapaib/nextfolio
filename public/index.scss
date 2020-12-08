@@ -88,13 +88,21 @@ $secondary: #e63946;
 
       }.about
       {
-          background: #000;
+          background: rgb(0, 0, 0);
           height: 100vh;
           width: 100vw;
           color: white;
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
+          flex-wrap: wrap;
+          padding-left: 10vw;
+          padding-right: 20vw;
+          h1 {
+              font-size: 3em;
+              letter-spacing: 3px;
+              width: 100%;
+          }
          
 
       }
@@ -112,6 +120,8 @@ $secondary: #e63946;
         .wrapper
         { height: 100vh;
             transform: none;
+            width: 100vw;
+           
 
         
         .landing{
@@ -135,17 +145,16 @@ $secondary: #e63946;
             }
             
         }
-    }}
+        .about
+        {
+            width: 100vw;
+           
+        }
+    }
+}
 }
 ::-webkit-scrollbar {
-    background: $bg;
-    border-radius: 10px;
+    display: none;
     
   }
-  ::-webkit-scrollbar-thumb {
-    background: $secondary;
-    margin-left: 10px;
-    border-radius: 30px;
-
-               
-  }
+ 
