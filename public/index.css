@@ -181,6 +181,10 @@
   }
   .main .wrapper .landing {
     scroll-snap-align: start;
+    /* .moon
+            {
+            display: none;
+            } */
   }
   .main .wrapper .landing .name {
     width: 100vw;
@@ -193,9 +197,6 @@
     width: 100vw;
     font-size: 1.3em;
   }
-  .main .wrapper .landing .moon {
-    display: none;
-  }
   .main .wrapper .about {
     width: 100vw;
   }
@@ -204,7 +205,7 @@
   }
   .main .wrapper .about p {
     width: 85%;
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
