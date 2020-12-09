@@ -111,11 +111,7 @@ $secondary: #ff0057;
         }
         .moon 
         {
-            width: 41vw;
-            justify-self: flex-end;
-            position: absolute;
-            bottom: 0;
-            left: 100-49vw;
+           
           
         }
 
@@ -203,11 +199,11 @@ $secondary: #ff0057;
         { height: 100vh;
             transform: none;
             min-width: 300vw;
-           
 
         
         .landing{
             scroll-snap-align: start;
+          
             
             
             .name{
@@ -230,6 +226,7 @@ $secondary: #ff0057;
             width: 80vw;
             position: absolute;
             left: 20vw;
+    
             } 
             
         }
