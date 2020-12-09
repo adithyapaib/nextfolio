@@ -4,9 +4,8 @@ export default function Hello() {
   return <>
     <HEAD>
       <title>{user.name} | {user.job}</title>
-      <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
-maximum-scale=1.0, user-scalable=no" />
-      <meta name="theme-color" content="#000"></meta>
+      <meta name="description" content={user.description}></meta>
+      <meta name="theme-color" content="#000"/>
       <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/windows/32/000000/code.png" />
     </HEAD>
     <div className='main'>
@@ -15,17 +14,17 @@ maximum-scale=1.0, user-scalable=no" />
         <section className='section'></section>
           <h1 className='name'>{user.name}</h1>
           <h2 className='job'>{user.job}</h2>
-          <img src='/img/coding.svg' className='moon'></img>
+          <img src='/img/coding.svg' className='moon' alt='coding svg illustration'></img>
         </div>
         <div className="about">
          
           <h1>About Me</h1>
           <div className='img'>
-            <img src="img/goals.svg" />
+            <img src="img/goals.svg" alt='Boy illustration' />
           </div>
 
           <br />
-          <p>{user.decription}</p>
+          <p>{user.description}</p>
 
         </div>
 
