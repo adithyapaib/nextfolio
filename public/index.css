@@ -78,6 +78,25 @@
       flex-wrap: wrap;
 }
 
+.main .wrapper .landing .section {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 20vh;
+  background: white;
+}
+
+.main .wrapper .landing .section:before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  background: #ff0057;
+  left: 0;
+  width: 90vw;
+  height: 100%;
+  border-radius: 0% 0% 80% 00%;
+}
+
 .main .wrapper .landing .name {
   text-align: left;
   -ms-flex-item-align: start;
@@ -90,7 +109,7 @@
 }
 
 .main .wrapper .landing .name::first-letter {
-  color: #e63946;
+  color: #ff0057;
   font-size: 3em;
   letter-spacing: 15px;
 }
@@ -220,7 +239,6 @@
     font-size: 1.3em;
   }
   .main .wrapper .landing .moon {
-    display: none;
     margin-bottom: 5%;
   }
   .main .wrapper .about {
@@ -228,6 +246,9 @@
   }
   .main .wrapper .about .img img {
     width: 90%;
+  }
+  .main .wrapper .about h1 {
+    font-size: 2.5em;
   }
   .main .wrapper .about p {
     width: 85%;

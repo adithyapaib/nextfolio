@@ -6,7 +6,7 @@
 }
 $bg: #fdfffc;
 $primary: #000000;
-$secondary: #e63946;
+$secondary: #ff0057;
 *{
     padding: 0;
     margin: 0;
@@ -59,7 +59,27 @@ $secondary: #e63946;
           align-items: center;
           flex-wrap: wrap;
 
-          
+          .section {
+
+            position: absolute;
+            top: 0;
+            width: 100vw;
+            height: 20vh;
+            background:  white;
+            &:before
+            {
+                content: " ";
+                position: absolute;
+                bottom: 0;
+                background: $secondary;
+                left: 0;
+                width: 90vw;
+                height: 100%;
+                border-radius:  0% 0% 80% 00%;
+                
+               
+            }
+        }
         .name
         {
             text-align: left;
@@ -200,7 +220,7 @@ $secondary: #e63946;
             }
              .moon
             {
-            display: none;
+            
             margin-bottom: 5%;
             } 
             
@@ -215,6 +235,9 @@ $secondary: #e63946;
                     width: 90%;
                 }
             } 
+            h1 {
+                font-size: 2.5em;
+            }
 
             p {
                 width: 85%;

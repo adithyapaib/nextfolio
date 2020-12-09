@@ -12,11 +12,13 @@ maximum-scale=1.0, user-scalable=no" />
     <div className='main'>
       <div className='wrapper'>
         <div className='landing'>
+        <section className='section'></section>
           <h1 className='name'>{user.name}</h1>
           <h2 className='job'>{user.job}</h2>
-          <img src='/img/home.svg' className='moon'></img>
+          <img src='/img/tent.svg' className='moon'></img>
         </div>
         <div className="about">
+         
           <h1>About Me</h1>
           <div className='img'>
             <img src="img/goals.svg" />
@@ -29,7 +31,7 @@ maximum-scale=1.0, user-scalable=no" />
 
         <div className='skills'>
           <h1>Skills</h1>
-          <h2>{user.title.title1}</h2>
+        
           
 
         </div>
@@ -39,4 +41,3 @@ maximum-scale=1.0, user-scalable=no" />
 
   </>
 }
-console.log(user.skill.total)
