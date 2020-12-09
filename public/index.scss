@@ -79,7 +79,7 @@ $secondary: #ff0057;
                 height: 35vw;
                 border-radius:  100% 100% 100% 100%;
                 z-index: 1;
-                box-shadow:  5px 5px 33px rgba(126, 126, 126, 0.973), inset  -5px -5px 20px #00000056;
+                box-shadow:  5px 5px 13px rgba(126, 126, 126, 0.76), inset  -5px -5px 25px #00000062;
                 
                
             }
@@ -226,7 +226,10 @@ $secondary: #ff0057;
              .moon
             {
             
-            margin-bottom: 5%;
+            
+            width: 80vw;
+            position: absolute;
+            left: 20vw;
             } 
             
         }

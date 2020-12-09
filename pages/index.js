@@ -15,7 +15,7 @@ maximum-scale=1.0, user-scalable=no" />
         <section className='section'></section>
           <h1 className='name'>{user.name}</h1>
           <h2 className='job'>{user.job}</h2>
-          <img src='/img/tent.svg' className='moon'></img>
+          <img src='/img/coding.svg' className='moon'></img>
         </div>
         <div className="about">
          

@@ -98,8 +98,8 @@
   height: 35vw;
   border-radius: 100% 100% 100% 100%;
   z-index: 1;
-  -webkit-box-shadow: 5px 5px 33px rgba(126, 126, 126, 0.973), inset -5px -5px 20px #00000056;
-          box-shadow: 5px 5px 33px rgba(126, 126, 126, 0.973), inset -5px -5px 20px #00000056;
+  -webkit-box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.76), inset -5px -5px 25px #00000062;
+          box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.76), inset -5px -5px 25px #00000062;
 }
 
 .main .wrapper .landing .name {
@@ -245,7 +245,9 @@
     font-size: 1.3em;
   }
   .main .wrapper .landing .moon {
-    margin-bottom: 5%;
+    width: 80vw;
+    position: absolute;
+    left: 20vw;
   }
   .main .wrapper .about {
     width: 100vw;
