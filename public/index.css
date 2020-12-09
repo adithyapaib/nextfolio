@@ -89,12 +89,17 @@
 .main .wrapper .landing .section:before {
   content: " ";
   position: absolute;
-  bottom: 0;
+  bottom: -30%;
   background: #ff0057;
-  left: 0;
-  width: 90vw;
-  height: 100%;
-  border-radius: 0% 0% 80% 00%;
+  left: -20%;
+  min-width: 300px;
+  min-height: 300px;
+  width: 35vw;
+  height: 35vw;
+  border-radius: 100% 100% 100% 100%;
+  z-index: 1;
+  -webkit-box-shadow: 5px 5px 33px rgba(126, 126, 126, 0.973), inset -5px -5px 20px #00000056;
+          box-shadow: 5px 5px 33px rgba(126, 126, 126, 0.973), inset -5px -5px 20px #00000056;
 }
 
 .main .wrapper .landing .name {
@@ -156,6 +161,7 @@
   letter-spacing: 3px;
   width: 100%;
   margin-left: 5%;
+  z-index: 100;
 }
 
 .main .wrapper .about p {
