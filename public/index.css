@@ -175,8 +175,8 @@
   height: 25vw;
   border-radius: 100% 100% 100% 100%;
   z-index: 1;
-  -webkit-box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76), inset 5px 5px 25px #00000062, 3px 5px 25px #3888fff5;
-          box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76), inset 5px 5px 25px #00000062, 3px 5px 25px #3888fff5;
+  -webkit-box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76), inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+          box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76), inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
 }
 
 .main .wrapper .about h1 {
@@ -225,6 +225,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 5%;
 }
 
 .main .wrapper .skills h1 {
@@ -234,11 +235,27 @@
   margin-left: 5%;
 }
 
-.main .wrapper .skills h2 {
-  font-size: 2.5em;
-  letter-spacing: 3px;
-  width: 100%;
-  margin-left: 5%;
+.main .wrapper .skills ul {
+  color: black;
+  font-size: 2em;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90vw;
+  margin-top: 10%;
+}
+
+.main .wrapper .skills ul li {
+  float: left;
 }
 
 @media only screen and (max-width: 600px) {

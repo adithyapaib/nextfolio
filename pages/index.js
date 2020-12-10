@@ -1,5 +1,7 @@
 import user from '../editthis';
 import HEAD from 'next/head';
+const listItems = user.skills[0].map((number) =><li>{number}</li>);
+const listItems2 = user.skills[1].map((number) =><li>{number}</li>);
 export default function Hello() {
   return <>
     <HEAD>
@@ -31,9 +33,10 @@ export default function Hello() {
 
         <div className='skills'>
           <h1>Skills</h1>
-        
-          
-
+          <div className='skill'>
+            <ul>{listItems}</ul>
+            <ul>{listItems2}</ul>
+          </div>
         </div>
 
       </div>
