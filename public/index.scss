@@ -131,7 +131,6 @@ $secondary: #ff0057;
           .section {
             position: absolute;
             bottom: 0%;
-            
             width: 100vw;
             height: 20vh;
             background:  white;
@@ -187,40 +186,74 @@ $secondary: #ff0057;
       .skills
       {
         scroll-snap-align: start;
-        background: rgb(255, 255, 255);
+        width: 70vw;
         height: 100vh;
-        width: 100vw;
-        color: rgb(0, 0, 0);
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
         flex-wrap: wrap;
-        padding-left: 5%;
-        h1 {
+        padding-left: 8%;
+        z-index: 1000;
+        h1 
+        {
             font-size: 3.5em;
-            letter-spacing: 3px;
-            width: 100%;
-            margin-left: 5%;
+            z-index: 1000;
+        }
+        h2 {
+            font-size: 2.5em;
+            color: $secondary;
+            z-index: 1000;
+        }
+        .section {
+            position: absolute;
+            top: 0%;
+            width: 100vw;
+            height: 20vh;
+            background:  transparent;
+            &:before
+            {
+                content: " ";
+                position: absolute;
+               top: -30%;
+                background: $secondary;
+                right: 30%;
+                min-width: 200px;
+               min-height: 200px;
+                width: 20vw;
+                height: 20vw;
+                border-radius:  100% 100% 100% 100%;
+                z-index: 1;
+                box-shadow:  -5px -5px 13px rgba(126, 126, 126, 0.76), inset  5px 5px 25px #00000062, 3px 5px 25px #313131ee; 
+            }
         }
         ul 
         {
-            color: rgb(0, 0, 0);
-            font-size: 2em;
             list-style: none;
+            width: 100%;
             display: flex;
-            justify-content: space-evenly;
             flex-wrap: wrap;
             align-items: center;
-            width: 90vw;
-            margin-top: 10%;
-           li 
-           {
+            flex-wrap: wrap;
+            margin-left: -60px;
+            z-index: 1000;
+            li 
+            {
                 float: left;
-           }
+                margin-left: 60px;
+                font-size: 1.5em;
+                z-index: 1000;
+                &:before {
+                    content: "\2609";
+                    color: $secondary;
+                    font-weight: bold;
+                    display: inline-block; 
+                    width: 1.3em;
+                    margin-left: -1em;
+                  }
+                
+                
+            }
         }
-        
-        
-       
       }
        
     }
@@ -318,11 +351,19 @@ $secondary: #ff0057;
             
         }
         .skills
-        {
-            max-width: 100vw;
-            max-height: 100vh;
+        {width: 100vw;
+            padding-left: 10vw;
+            
+            ul 
+            {
+                li 
+                {
+                    margin-top: 15px;
+                }
+            }
         }
         
     }
 }
 }
+@import 'connect';
