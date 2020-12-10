@@ -248,6 +248,7 @@
     width: 70vw;
     position: absolute;
     left: 15vw;
+    margin-bottom: 10%;
   }
   .main .wrapper .about {
     max-width: 100vw;
