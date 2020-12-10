@@ -52,7 +52,7 @@ $secondary: #ff0057;
       {
         scroll-snap-align: start;
           width: 100vw;
-          height: 100vh;
+          height: 100vh; 
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -111,7 +111,10 @@ $secondary: #ff0057;
         }
         .moon 
         {
-           
+           width: 40vw;
+           position: absolute;
+           left: 100vw-41vw;
+           bottom: 0;
           
         }
 
@@ -192,20 +195,21 @@ $secondary: #ff0057;
 @media only screen and (max-width: 600px) {
     .main{
         transform: none;
-        width: auto;
+        width: 100vw;
         height: 100vh;
-        scroll-snap-type: y mandatory;
+        overflow-x: visible;
+        scroll-snap-type: x mandatory;
+          
         .wrapper
-        { height: 100vh;
-            transform: none;
-            min-width: 300vw;
+        { transform: none;
 
         
         .landing{
             scroll-snap-align: start;
-          
             
-            
+            max-width: 100vw;
+            max-height: 100vh;
+ 
             .name{
                 width: 100vw;
                 font-size: 1.5em;
@@ -223,16 +227,19 @@ $secondary: #ff0057;
             {
             
             
-            width: 80vw;
+            width: 70vw;
             position: absolute;
-            left: 20vw;
+            left: 15vw;
     
             } 
             
         }
         .about
         {
-            width: 100vw;
+        
+            max-width: 100vw;
+            max-height: 100vh;
+           
             .img
             {
                 img
@@ -249,12 +256,12 @@ $secondary: #ff0057;
                 font-size: 1.25em;
             }
         }
+        .skills
+        {
+            max-width: 100vw;
+            max-height: 100vh;
+        }
         
     }
 }
 }
-::-webkit-scrollbar {
-    display: none;
-    
-  }
- 
