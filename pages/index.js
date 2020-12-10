@@ -18,7 +18,7 @@ export default function Hello() {
           <img src='/img/coding.svg' className='moon' alt='coding svg illustration'></img>
         </div>
         <div className="about">
-         
+        <section className='section'></section>
           <h1>About Me</h1>
           <div className='img'>
             <img src="img/goals.svg" alt='Boy illustration' />

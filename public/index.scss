@@ -79,9 +79,7 @@ $secondary: #ff0057;
                 height: 35vw;
                 border-radius:  100% 100% 100% 100%;
                 z-index: 1;
-                box-shadow:  5px 5px 13px rgba(126, 126, 126, 0.76), inset  -5px -5px 25px #00000062;
-                
-               
+                box-shadow:  5px 5px 13px rgba(126, 126, 126, 0.76), inset  -5px -5px 25px #00000062; 
             }
         }
         .name
@@ -130,13 +128,36 @@ $secondary: #ff0057;
           justify-content: flex-start;
           align-items: center;
           flex-wrap: wrap;
-          
+          .section {
+            position: absolute;
+            bottom: 0%;
+            
+            width: 100vw;
+            height: 20vh;
+            background:  white;
+            &:before
+            {
+                content: " ";
+                position: absolute;
+                bottom: -100%;
+                background: $secondary;
+                right: -5%;
+                min-width: 300px;
+               min-height: 300px;
+                width: 25vw;
+                height: 25vw;
+                border-radius:  100% 100% 100% 100%;
+                z-index: 1;
+                box-shadow:  -5px -5px 13px rgba(126, 126, 126, 0.76), inset  5px 5px 25px #00000062, 3px 5px 25px #3888fff5; 
+            }
+        }
           h1 {
               font-size: 3.5em;
               letter-spacing: 3px;
               width: 100%;
               margin-left: 5%;
               z-index: 100;
+              z-index: 1000;
           }
           p {
             margin-left: 5%;
@@ -146,6 +167,7 @@ $secondary: #ff0057;
             font-size: 1.5em;
             width: 60%;
             margin-bottom: 5%;
+            z-index: 1000;
           }
           .img
           {
@@ -153,6 +175,7 @@ $secondary: #ff0057;
             img
             {
                 width: 50%;
+                z-index: 1000;
                 
             }
 
@@ -198,7 +221,8 @@ $secondary: #ff0057;
         width: 100vw;
         height: 100vh;
         overflow-x: visible;
-        scroll-snap-type: x mandatory;
+        overflow-y: hidden;
+        scroll-snap-type: x proximity;
           
         .wrapper
         { transform: none;
@@ -227,10 +251,11 @@ $secondary: #ff0057;
             {
             
             
-            width: 70vw;
+            width: 65vw;
             position: absolute;
             left: 15vw;
-            margin-bottom: 10%;
+            margin-bottom: 15%;
+            
     
             } 
             
@@ -255,7 +280,29 @@ $secondary: #ff0057;
             p {
                 width: 85%;
                 font-size: 1.25em;
+                z-index: 100;
             }
+            .section {
+                position: absolute;
+                bottom: 0%;
+                
+                width: 100vw;
+                height: 20vh;
+                background:  white;
+                display: none;
+                &:before
+                {
+                   
+                    bottom: -115%;
+        
+                    right: -5%;
+                    min-width: 250px;
+                   min-height: 250px;
+                    width: 25vw;
+                    height: 35vw;
+                }
+            }
+            
         }
         .skills
         {
