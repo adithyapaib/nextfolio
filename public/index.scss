@@ -186,7 +186,7 @@ $secondary: #ff0057;
       .skills
       {
         scroll-snap-align: start;
-        width: 70vw;
+        width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: space-around;
@@ -203,6 +203,24 @@ $secondary: #ff0057;
             font-size: 2.5em;
             color: $secondary;
             z-index: 1000;
+        }
+        .img 
+        {
+            
+            width: 90vw;
+
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 1;
+            img
+            {
+                width: 25vw;
+                transform: rotate(45deg);
+                z-index: 1;
+                opacity: 0.9;
+            }
         }
         .section {
             position: absolute;
@@ -226,6 +244,7 @@ $secondary: #ff0057;
                 box-shadow:  -5px -5px 13px rgba(126, 126, 126, 0.76), inset  5px 5px 25px #00000062, 3px 5px 25px #313131ee; 
             }
         }
+      
         ul 
         {
             list-style: none;

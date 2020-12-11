@@ -210,7 +210,7 @@
 
 .main .wrapper .skills {
   scroll-snap-align: start;
-  width: 70vw;
+  width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +236,27 @@
   font-size: 2.5em;
   color: #ff0057;
   z-index: 1000;
+}
+
+.main .wrapper .skills .img {
+  width: 90vw;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 1;
+}
+
+.main .wrapper .skills .img img {
+  width: 25vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 1;
+  opacity: 0.9;
 }
 
 .main .wrapper .skills .section {
