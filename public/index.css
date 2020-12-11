@@ -386,6 +386,7 @@
   .main .wrapper .skills {
     width: 100vw;
     padding-left: 10vw;
+    padding-bottom: 5vh;
   }
   .main .wrapper .skills ul li {
     margin-top: 15px;
@@ -393,8 +394,13 @@
 }
 
 .main .wrapper .connect {
+  scroll-snap-align: start;
+  padding-left: 10vw;
+  padding-top: 5vh;
   width: 100vw;
   height: 100vh;
   background: white;
+  font-size: 1.5em;
+  z-index: 1000;
 }
 /*# sourceMappingURL=index.css.map */

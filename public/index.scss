@@ -295,7 +295,6 @@ $secondary: #ff0057;
         
         .landing{
             scroll-snap-align: start;
-            
             max-width: 100vw;
             max-height: 100vh;
  
@@ -372,6 +371,7 @@ $secondary: #ff0057;
         .skills
         {width: 100vw;
             padding-left: 10vw;
+            padding-bottom: 5vh;
             
             ul 
             {
