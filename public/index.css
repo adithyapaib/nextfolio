@@ -472,7 +472,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90vw;
+  width: 100vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -480,16 +482,40 @@
 
 .main .wrapper ul li {
   float: left;
-  margin-left: 20px;
-  margin-top: 20px;
   border-radius: 100px;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 
-.main .wrapper ul li:hover {
-  background: black;
-  padding: 10px;
-  border-radius: 100px;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+.main .wrapper ul li a {
+  color: #ff0057;
+  font-size: 2em;
+}
+
+.main .wrapper ul li a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .main .wrapper .connect h1 {
+    font-size: 1.8em;
+  }
+  .main .wrapper .connect h2 {
+    font-size: 1.25em;
+  }
+  .main .wrapper .connect ul li a {
+    font-size: 1.6em;
+  }
+  .main .wrapper .connect .form input, .main .wrapper .connect .form textarea {
+    width: 70vw;
+    font-size: 0.7em;
+    margin-bottom: 2.3em;
+  }
+  .main .wrapper .connect .form button {
+    width: 35vw;
+    height: 10vw;
+    font-size: 0.7em;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

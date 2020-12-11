@@ -6,8 +6,9 @@ export default function Hello() {
   return <>
     <HEAD>
       <title>{user.name} | {user.job}</title>
+      <script src="https://kit.fontawesome.com/4019246ab4.js" crossorigin="anonymous"></script>
       <meta name="description" content={user.description}></meta>
-      <meta name="theme-color" content="#ff0057" />
+      <meta name="theme-color" content="#ff286fd8" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:wght@400;700&display=swap" rel="stylesheet"></link>
       <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap' rel="stylesheet"></link>
@@ -43,11 +44,11 @@ export default function Hello() {
         <div className='connect'> 
          <h1>Connect</h1>
          <ul>
-           <li> <a href={user.social.github} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/50/ff0057/github.png"/> </a></li>
-           <li> <a href={user.social.linkedin} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/50/ff0057/linkedin.png"/> </a></li>
-           <li> <a href={user.social.twitter} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/50/ff0057/twitter.png"/> </a></li>
-           <li> <a href={user.social.mail} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/50/ff0057/email.png"/> </a></li>
-           <li> <a href={user.social.instagram} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/50/ff0057/instagram.png"/> </a></li>
+           <li> <a href={user.social.github} target='_blank'><i class="fab fa-github"></i> </a></li>
+           <li> <a href={user.social.linkedin} target='_blank'><i class="fab fa-linkedin"></i></a></li>
+           <li> <a href={user.social.twitter} target='_blank'><i class="fab fa-twitter"></i> </a></li>
+           <li> <a href={user.social.mail} target='_blank'><i class="far fa-envelope"></i></a></li>
+           <li> <a href={user.social.instagram} target='_blank'><i class="fab fa-instagram"></i></a></li>
 
          </ul>
          <h2>Contact Me</h2>
