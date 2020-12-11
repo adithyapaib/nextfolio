@@ -24,9 +24,11 @@ export default function Hello() {
           <section className='section'></section>
           <h1 className='name'>{user.name}</h1>
           <h2 className='job'>{user.job}</h2>
+          <br/>
+         {/*  <h4 className='lm'><a href='#about'>Scroll Right !</a></h4> */}
           <img src='/img/coding.svg' className='moon' alt='coding svg illustration'></img>
         </div>
-        <div className="about">
+        <div className="about" id='about'>
           <section className='section'></section>
           <h1>About Me</h1>
           <div className='img'>

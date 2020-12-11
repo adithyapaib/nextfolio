@@ -127,6 +127,15 @@
   color: #000000;
 }
 
+.main .wrapper .landing .lm {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 5%;
+  margin-top: 25px;
+}
+
 .main .wrapper .landing .moon {
   width: 40vw;
   position: absolute;
