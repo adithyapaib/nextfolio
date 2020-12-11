@@ -386,6 +386,9 @@
     padding-left: 10vw;
     padding-bottom: 5vh;
   }
+  .main .wrapper .skills .img {
+    display: none;
+  }
   .main .wrapper .skills ul li {
     margin-top: 15px;
   }
@@ -400,5 +403,80 @@
   background: white;
   font-size: 1.5em;
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .wrapper .form {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .wrapper .form input, .main .wrapper .form textarea {
+  font-size: 1em;
+  margin-bottom: 50px;
+  margin: 10px;
+  padding: 10px 5px 5px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 600px;
+  max-width: 70vw;
+}
+
+.main .wrapper .form input:hover, .main .wrapper .form input :focus, .main .wrapper .form textarea:hover, .main .wrapper .form textarea :focus {
+  border-bottom: 1px solid #ff0057;
+}
+
+.main .wrapper .form button {
+  margin: 10px;
+  width: 300px;
+  height: 50px;
+  background: black;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.main .wrapper ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .wrapper ul li {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 100px;
+}
+
+.main .wrapper ul li:hover {
+  background: #ff0057;
+  border-radius: 100px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=index.css.map */

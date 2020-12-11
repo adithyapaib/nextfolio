@@ -12,6 +12,65 @@
             background: rgb(255, 255, 255);
             font-size: 1.5em;
             z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+        .form
+        {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            input, textarea
+            {
+                font-size: 1em;
+                margin-bottom: 50px;
+                margin: 10px;
+                padding: 10px 5px 5px 10px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid black;
+                width: 600px;
+                max-width: 70vw;
+                &:hover,:focus
+                {
+                   border-bottom: 1px solid $secondary;
+                }
+            }
+            button 
+            {
+                margin: 10px;
+                width: 300px;
+                height: 50px;
+                background: black;
+                border: none;
+                color: white;
+                border-radius: 10px;
+            }
+        }
+        ul 
+        {
+            list-style: none;
+            display: flex;
+            li 
+            {
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+                border-radius: 100px;
+               
+                &:hover
+                {
+                    background: $secondary;
+                    border-radius: 100px;
+                    transform: scale(1.5);
+                }
+               
+            }
         }
     }
 }

@@ -41,7 +41,21 @@ export default function Hello() {
           <div className='img'><img  src='img/patternpad.svg' alt='pattern'></img> </div>
         </div>
         <div className='connect'> 
-         <h1>Social Media</h1>
+         <h1>Connect</h1>
+         <ul>
+           <li> <a href={user.social.github} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/45/000000/github.png"/> </a></li>
+           <li> <a href={user.social.linkedin} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/45/000000/linkedin.png"/> </a></li>
+           <li> <a href={user.social.twitter} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/45/000000/twitter.png"/> </a></li>
+           <li> <a href={user.social.mail} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/45/000000/email.png"/> </a></li>
+           <li> <a href={user.social.instagram} target='_blank'><img src="https://img.icons8.com/fluent-systems-filled/45/000000/instagram.png"/> </a></li>
+
+         </ul>
+        <form action={user.form} method="POST" className='form' >
+     <input type="text" name="name" required placeholder='Name'/>
+     <input type="email" name="email" required placeholder='Email' />
+     <textarea placeholder='Message'></textarea>
+     <button type="submit">Send</button>
+</form>
 
         </div>
 
