@@ -376,11 +376,19 @@ $secondary: #ff0057;
             {
                 display: none;
             }
+            h2
+            {
+                font-size: 2em;
+            }
             ul 
             {
+                padding-left: 10px;
+                
+                a
                 li 
                 {
                     margin-top: 15px;
+                    font-size: 1.2em;
                 }
             }
         }

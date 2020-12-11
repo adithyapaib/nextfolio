@@ -4,8 +4,8 @@ var site = {
     description: `Hi there! I am Adithya Pai B from Mangalore, India.
     I am currently pursuing Bachelor of Engineering in Computer Science.
     I ❤️ to design Websites, UI/UX, and Photography `,
-    skills_title: ['Web Development', 'Design'],
-    skills: [['HTML', 'CSS', 'JS', 'ReactJS','SCSS'], ['Photoshop', 'XD',]],
+    skills_title: ['Web Development', 'Design','Programming'],
+    skills: [['HTML', 'CSS', 'JS', 'ReactJS','SCSS'], ['Photoshop', 'XD','Figma'],['C','C++','Python3', 'Javascript']],
     social: {
         github: 'https://github.com/adithyapaib',
         twitter: 'https://twitter.com/adithyapaib',

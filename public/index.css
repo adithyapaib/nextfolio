@@ -389,8 +389,16 @@
   .main .wrapper .skills .img {
     display: none;
   }
-  .main .wrapper .skills ul li {
+  .main .wrapper .skills h2 {
+    font-size: 2em;
+  }
+  .main .wrapper .skills ul {
+    padding-left: 10px;
+  }
+  .main .wrapper .skills ul a
+li {
     margin-top: 15px;
+    font-size: 1.2em;
   }
 }
 

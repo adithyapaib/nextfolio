@@ -2,6 +2,7 @@ import user from '../editthis';
 import HEAD from 'next/head';
 const listItems = user.skills[0].map((number) => <li>{number}</li>);
 const listItems2 = user.skills[1].map((number) => <li>{number}</li>);
+const listItems3 = user.skills[2].map((number) => <li>{number}</li>);
 export default function Hello() {
   return <>
     <HEAD>
@@ -38,6 +39,8 @@ export default function Hello() {
           <ul>{listItems}</ul>
           <h2>{user.skills_title[1]}</h2>
           <ul>{listItems2}</ul>
+           <h2>{user.skills_title[2]}</h2>
+           <ul>{listItems3}</ul>
           {/* <section className='section'></section> */}
           <div className='img'><img  src='img/patternpad.svg' alt='pattern'></img> </div>
         </div>
