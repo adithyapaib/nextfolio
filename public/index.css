@@ -417,16 +417,16 @@
 }
 
 .main .wrapper .form {
-  width: 100vw;
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -440,8 +440,9 @@
   padding: 10px 5px 5px 10px;
   outline: none;
   border: none;
+  margin-bottom: 50px;
   border-bottom: 1px solid black;
-  width: 600px;
+  width: 500px;
   max-width: 70vw;
 }
 
@@ -451,12 +452,19 @@
 
 .main .wrapper .form button {
   margin: 10px;
-  width: 300px;
-  height: 50px;
-  background: black;
+  padding: 0.8em 6em;
+  background: #ff0057;
   border: none;
   color: white;
   border-radius: 10px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.main .wrapper .form button:hover, .main .wrapper .form button:focus-visible {
+  background: #000;
+  outline: none;
+  border: none;
 }
 
 .main .wrapper ul {
@@ -464,6 +472,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 90vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .main .wrapper ul li {
@@ -474,7 +486,8 @@
 }
 
 .main .wrapper ul li:hover {
-  background: #ff0057;
+  background: black;
+  padding: 10px;
   border-radius: 100px;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);

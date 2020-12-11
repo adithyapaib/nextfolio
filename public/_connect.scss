@@ -20,10 +20,10 @@
         }
         .form
         {
-            width: 100vw;
+            width: 90vw;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             flex-direction: column;
             input, textarea
             {
@@ -33,8 +33,9 @@
                 padding: 10px 5px 5px 10px;
                 outline: none;
                 border: none;
+                margin-bottom: 50px;
                 border-bottom: 1px solid black;
-                width: 600px;
+                width: 500px;
                 max-width: 70vw;
                 &:hover,:focus
                 {
@@ -44,28 +45,38 @@
             button 
             {
                 margin: 10px;
-                width: 300px;
-                height: 50px;
-                background: black;
+                padding: 0.8em 6em;
+                background: $secondary;
                 border: none;
                 color: white;
                 border-radius: 10px;
+                font-size: 0.8em;
+                cursor: pointer;
+                &:hover, &:focus-visible{
+                    background: #000;
+                    outline: none;
+                    border: none;
+                }
             }
         }
         ul 
         {
             list-style: none;
             display: flex;
+            width: 90vw;
+            justify-content:  flex-start;
             li 
             {
                 float: left;
                 margin-left: 20px;
                 margin-top: 20px;
                 border-radius: 100px;
-               
+                
+                
                 &:hover
                 {
-                    background: $secondary;
+                    background: black;
+                    padding: 10px;
                     border-radius: 100px;
                     transform: scale(1.5);
                 }
