@@ -35,7 +35,7 @@ export default function Hello() {
           <h2>{user.skills_title[1]}</h2>
           <ul>{listItems2}</ul>
           {/* <section className='section'></section> */}
-          <div className='img'><img  src='img/patternpad.svg'></img> </div>
+          <div className='img'><img  src='img/patternpad.svg' alt='pattern'></img> </div>
         </div>
         <div className='connect'> 
          <h1>Social Media</h1>
