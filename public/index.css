@@ -497,6 +497,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .main .wrapper .connect {
+    padding-bottom: 5%;
+  }
   .main .wrapper .connect h1 {
     font-size: 1.8em;
   }
