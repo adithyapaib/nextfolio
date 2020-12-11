@@ -58,9 +58,15 @@ export default function Hello() {
          </ul>
          <h2>Contact Me</h2>
         <form action={user.form} method="POST" className='form' >
-        <label for="name"></label> <input id='name' name="name" type="text" name="name" required placeholder='Name'/>
+     {/*    <label for="name"></label> <input id='name' name="name" type="text" name="name" required placeholder='Name'/>
         <label for="email"></label><input type="email" id="email" name="email"required placeholder='Email' />
-        <label for="message"></label><textarea name='message' placeholder='Message'></textarea>
+        <label for="message"></label><textarea name='message' placeholder='Message'></textarea> */}
+  <label for="name">Name</label> 
+ <input type="text" id="name" name="name" required/>
+ <label for="email">Email</label> 
+ <input type="email" id="email" name="email" required/>
+ <label for="message">Message </label>
+ <textarea class="form-control" id="message" name="message" rows="1" required></textarea>
      <button type="submit">Send</button>
 </form>
         </div>

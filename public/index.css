@@ -517,6 +517,9 @@ li {
   .main .wrapper .connect ul li a {
     font-size: 1.6em;
   }
+  .main .wrapper .connect .form label {
+    font-size: 0.7em;
+  }
   .main .wrapper .connect .form input, .main .wrapper .connect .form textarea {
     width: 70vw;
     font-size: 0.7em;
