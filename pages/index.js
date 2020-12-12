@@ -72,7 +72,7 @@ export default function Hello() {
      <button type="submit">Send</button>
 </form>
 <div className='img-social'>
-<img src='/img/social.svg' className='img-social'></img>
+<img src='/img/social.svg' className='img-social' alt='Connect Illustration'></img>
 </div>
 
         </div>
