@@ -16,11 +16,11 @@ $secondary: #ff0057;
     
 }
 
+
 .main
 {
     width: 100vw;
     height: 100vw;
-    background: #000;
     background: $bg;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
@@ -36,15 +36,14 @@ $secondary: #ff0057;
     
     .wrapper
     {
-        
-       
+
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    min-width: 200vw;
+    min-width: 300vw;
     max-width: auto;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
