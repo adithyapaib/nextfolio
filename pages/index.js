@@ -71,6 +71,10 @@ export default function Hello() {
  <textarea class="form-control" id="message" name="message" rows="1" required></textarea>
      <button type="submit">Send</button>
 </form>
+<div className='img-social'>
+<img src='/img/social.svg' className='img-social'></img>
+</div>
+
         </div>
       </div>
     </div>

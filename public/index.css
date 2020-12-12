@@ -484,6 +484,21 @@ li {
   border: none;
 }
 
+.main .wrapper .img-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 80vw;
+  position: absolute;
+}
+
+.main .wrapper .img-social img {
+  width: 20vw;
+}
+
 .main .wrapper ul {
   list-style: none;
   display: -webkit-box;
@@ -525,6 +540,9 @@ li {
   }
   .main .wrapper .connect ul li a {
     font-size: 1.6em;
+  }
+  .main .wrapper .connect .img-social {
+    display: none;
   }
   .main .wrapper .connect .form label {
     font-size: 0.7em;

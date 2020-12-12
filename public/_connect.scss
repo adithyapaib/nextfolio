@@ -59,6 +59,21 @@
                 }
             }
         }
+        .img-social
+        {
+           
+           display: flex;
+           justify-content: flex-end;
+           width: 80vw;
+           position: absolute;
+           img 
+           {
+               width: 20vw;
+             
+           }
+    
+            
+        }
         ul 
         {
             list-style: none;
@@ -112,6 +127,10 @@
                            font-size: 1.6em;
                        }
                    }
+               }
+               .img-social
+               {
+                   display: none;
                }
                .form
                {
