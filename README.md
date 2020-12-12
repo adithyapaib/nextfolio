@@ -25,7 +25,7 @@ A Horizontal Scroll Elegant Portfolio site built on NextJs
 ### Dont forget to star the repo and follow me, It means a lot !!! {^}_{^}
 
 <p align="center">
-  <img src="https://github.com/adithyapaib/nextfolio/blob/main/thumbnail.png" width="350" title="hover text">
+  <img src="https://github.com/adithyapaib/nextfolio/blob/main/thumbnail.png" width="600" title="hover text">
 </p>
 
 
