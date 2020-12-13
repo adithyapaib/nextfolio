@@ -1,16 +1,17 @@
 # NextFolio
 A Horizontal Scroll Elegant Portfolio site built on NextJs 
 ## Description 
-   NextFollio is a open-source Horizontal scroll portfolio website for mainly developers. The site is built keeping performance and elegance in mind. It is developed using NextJs and SCSS for extreme performance.
+   NextFollio is a open-source Horizontal scroll portfolio website for mainly developers. The site is built, keeping performance and elegance in mind. It is      developed using NextJs and SCSS for extreme performance.
    This is a easy to fork , edit and deploy site. So that any one with a ultra basic knowledge of programming (JS) can edit and deploy it.
 ## Tech Used
    - NextJS
    - SCSS 
 ##  How make it mine ?
 
- 1. Fork this Repo or Clone it to your github account (Give it a star also if u can >_<) 
+   1. Fork this Repo or Clone it to your github account (Give it a star also if u can >_<) 
 
- 2. Install the dependencies using the command (Make sure nodeJS is installed in ur PC)
+   2. Install the dependencies using the command (Make sure nodeJS is installed in ur PC)
+   
    ``` 
   npm i
   npm run dev
