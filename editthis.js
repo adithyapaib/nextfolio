@@ -18,6 +18,12 @@ var site = {
     },
     form: 'https://formsubmit.co/paiadithya26@gmail.com',
     /* DONT FOR GET TO ACTIVATE UR EMAIL AFTER SETTING UP THE FORM TO RECEIVE EMAILS */
+    projects: [
+        ["https://github.com/adithyapaib/portfolio-template", 'https://github.com/adithyapaib/portfolio-template'],
+         ['Calculator', 'Watch'],
+        ['Lorem1', 'Loremum1'],
+        
+    ],
    
     
 }
