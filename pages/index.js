@@ -5,8 +5,6 @@ import "aos/dist/aos.css";
 const listItems = user.skills[0].map((number) => <li>{number}</li>);
 const listItems2 = user.skills[1].map((number) => <li>{number}</li>);
 const listItems3 = user.skills[2].map((number) => <li>{number}</li>);
-/* const listItems5 = user.projects.decs.map((number) => <li>{number}</li>); */
-const listItems4 = user.projects.map((number) => <li> <h2>{number[1]}</h2>  <p>{number[1]}</p> <a href={number[0]}>Visit</a></li>);
 export default function Hello() {
   return <>
     <HEAD>
