@@ -76,12 +76,12 @@ export default function Hello() {
           </div>
 
         </div>
-        <div className='projects'>
+        {/* <div className='projects'>
           <h1>Projects</h1>
           {listItems4}
 
 
-        </div>
+        </div> */}
       </div>
     </div>
   </>
