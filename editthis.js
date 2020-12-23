@@ -13,7 +13,7 @@ var site = {
         github: 'https://github.com/adithyapaib',
         twitter: 'https://twitter.com/adithyapaib',
         linkedin: 'https://www.linkedin.com/in/adithyapaib/',
-        mail: 'mailto: paiadithya26@gmail.com',
+        mail: 'mailto: email@gmail.com',
         instagram: 'https://instagram.com'
     },
     form: 'https://formsubmit.co/paiadithya26@gmail.com',
