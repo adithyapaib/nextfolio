@@ -16,7 +16,7 @@ var site = {
         mail: 'mailto: email@gmail.com',
         instagram: 'https://instagram.com'
     },
-    form: 'https://formsubmit.co/paiadithya26@gmail.com',
+    form: 'https://formsubmit.co/email@gmail.com',
     /* DONT FOR GET TO ACTIVATE UR EMAIL AFTER SETTING UP THE FORM TO RECEIVE EMAILS */
     projects: [
         ["https://github.com/adithyapaib/portfolio-template", 'https://github.com/adithyapaib/portfolio-template'],
