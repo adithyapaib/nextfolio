@@ -9,6 +9,7 @@ var site = {
     /* Change your skills and title accodingly */
     skills_title: ['Web Development', 'Design','Programming'],
     skills: [['HTML', 'CSS', 'JS', 'ReactJS','SCSS'], ['Photoshop', 'XD','Figma'],['C','C++','Python3', 'Javascript']],
+    skillp:[[100, 80 ,100, 60, 80], [50, 60, 50], [70,80,90,90]],
     social: {
         /* Add your social media links here */
         github: 'https://github.com/adithyapaib',

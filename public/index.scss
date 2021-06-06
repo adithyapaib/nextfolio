@@ -1,42 +1,34 @@
-
 @font-face {
-    font-family: Adam;
-    src: url("../font/Adam.otf") format("opentype");
+  font-family: Adam;
+  src: url("../font/Adam.otf") format("opentype");
 }
-$bg: #fdfffc;
+$bg: #ffffff;
 $primary: #000000;
-$secondary: #ff0057;
+$secondary: #ce1212;
 
-*{
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: Adam;
-    scroll-behavior: smooth;
-    
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-family: Adam;
+  scroll-behavior: smooth;
 }
 
+.main {
+  width: 100vw;
+  height: 100vw;
+  background: $bg;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 
-.main
-{
-    width: 100vw;
-    height: 100vw;
-    background: $bg;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
-    
-    
-    
-    .wrapper
-    {
-
+  .wrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,362 +39,332 @@ $secondary: #ff0057;
     max-width: auto;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-      .landing
-      {
-        scroll-snap-align: start;
-          width: 100vw;
-          height: 100vh; 
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          flex-wrap: wrap;
+    .landing {
+      scroll-snap-align: start;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
 
-          .section {
-
-            position: absolute;
-            top: 0;
-            width: 100vw;
-            height: 20vh;
-            background:  white;
-            &:before
-            {
-                content: " ";
-                position: absolute;
-                bottom: -30%;
-                background: $secondary;
-                left: -20%;
-                min-width: 300px;
-               min-height: 300px;
-                width: 35vw;
-                height: 35vw;
-                border-radius:  100% 100% 100% 100%;
-                z-index: 1;
-                box-shadow:  5px 5px 13px rgba(126, 126, 126, 0.76), inset  -5px -5px 25px #00000062; 
-            }
-        }
-        .name
-        {
-            text-align: left;
-            align-self: flex-start;
-            padding-left: 5%;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: $primary;
-            letter-spacing: 10px;
-            &::first-letter {
-                color: $secondary;
-                font-size: 3em;
-                letter-spacing: 15px;
-                
-              }
-        }
-        .job 
-        {
-            align-self: flex-start;
-            text-align: left;
-            align-self: flex-start;
-            padding-left: 5%;
-            margin-top: 25px;
-            color: $primary;
-        }
-        .lm 
-        {
-            align-self: flex-start;
-            text-align: left;
-            align-self: flex-start;
-            padding-left: 5%;
-            margin-top: 25px;
-           
-        }
-        .moon 
-        {
-           width: 40vw;
-           position: absolute;
-           left: 100vw-41vw;
-           bottom: 0;
-          
-        }
-
-      }.about
-      {
-        scroll-snap-align: start;
-
-          background: rgb(255, 255, 255);
-          height: 100vh;
-          width: 100vw;
-          color: rgb(0, 0, 0);
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          flex-wrap: wrap;
-          .section {
-            position: absolute;
-            bottom: 0%;
-            width: 100vw;
-            height: 20vh;
-            background:  white;
-            &:before
-            {
-                content: " ";
-                position: absolute;
-                bottom: -100%;
-                background: $secondary;
-                right: -5%;
-                min-width: 300px;
-               min-height: 300px;
-                width: 25vw;
-                height: 25vw;
-                border-radius:  100% 100% 100% 100%;
-                z-index: 1;
-                box-shadow:  -5px -5px 13px rgba(126, 126, 126, 0.76), inset  5px 5px 25px #00000062, 3px 5px 25px #313131ee; 
-            }
-        }
-          h1 {
-              font-size: 3.5em;
-              letter-spacing: 3px;
-              width: 100%;
-              margin-left: 5%;
-              z-index: 100;
-              z-index: 1000;
-          }
-          p {
-            margin-left: 5%;
-            /* font-family: poppins; */
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 1.5em;
-            width: 60%;
-            margin-bottom: 5%;
-            z-index: 1000;
-          }
-          .img
-          {
-              margin-left: 5%;
-            img
-            {
-                width: 50%;
-                z-index: 1000;
-                
-            }
-
-          }
-          
-         
-
-      }
-      .skills
-      {
-        scroll-snap-align: start;
+      .section {
+        position: absolute;
+        top: 0;
         width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-left: 8%;
-        z-index: 1000;
-        h1 
-        {
-            font-size: 3.5em;
-            z-index: 1000;
-        }
-        h2 {
-            font-size: 2.5em;
-            color: $secondary;
-            z-index: 1000;
-        }
-        .img 
-        {
-            
-            width: 90vw;
-
-            position: absolute;
-            top: 0;
-            display: flex;
-            justify-content: flex-end;
-            z-index: 1;
-            img
-            {
-                width: 25vw;
-                transform: rotate(45deg);
-                z-index: 1;
-                opacity: 0.9;
-            }
-        }
-        .section {
-            position: absolute;
-            top: 0%;
-            width: 100vw;
-            height: 20vh;
-            background:  transparent;
-            &:before
-            {
-                content: " ";
-                position: absolute;
-               top: -30%;
-                background: $secondary;
-                right: 30%;
-                min-width: 200px;
-               min-height: 200px;
-                width: 20vw;
-                height: 20vw;
-                border-radius:  100% 100% 100% 100%;
-                z-index: 1;
-                box-shadow:  -5px -5px 13px rgba(126, 126, 126, 0.76), inset  5px 5px 25px #00000062, 3px 5px 25px #313131ee; 
-            }
-        }
-      
-        ul 
-        {
-            list-style: none;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-left: -60px;
-            z-index: 1000;
-            li 
-            {
-                float: left;
-                margin-left: 60px;
-                font-size: 1.5em;
-                z-index: 1000;
-                &:before {
-                    content: "\2609";
-                    color: $secondary;
-                    font-weight: bold;
-                    display: inline-block; 
-                    width: 1.3em;
-                    margin-left: -1em;
-                  }
-                
-                
-            }
+        height: 20vh;
+        background: white;
+        &:before {
+          content: " ";
+          position: absolute;
+          bottom: -30%;
+          background: $secondary;
+          left: -20%;
+          min-width: 300px;
+          min-height: 300px;
+          width: 35vw;
+          height: 35vw;
+          border-radius: 100% 100% 100% 100%;
+          z-index: 1;
+          box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.76),
+            inset -5px -5px 25px #00000062;
         }
       }
-       
+      .name {
+        text-align: left;
+        align-self: flex-start;
+        padding-left: 5%;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $primary;
+        letter-spacing: 10px;
+        &::first-letter {
+          color: $secondary;
+          font-size: 3em;
+          letter-spacing: 15px;
+        }
+      }
+      .job {
+        align-self: flex-start;
+        text-align: left;
+        align-self: flex-start;
+        padding-left: 5%;
+        margin-top: 25px;
+        color: $primary;
+      }
+      .lm {
+        align-self: flex-start;
+        text-align: left;
+        align-self: flex-start;
+        padding-left: 5%;
+        margin-top: 25px;
+      }
+      .moon {
+        width: 40vw;
+        position: absolute;
+        left: 100vw-41vw;
+        bottom: 0;
+      }
     }
-   
-    
-    
+    .about {
+      scroll-snap-align: start;
+
+      background: rgb(255, 255, 255);
+      height: 100vh;
+      width: 100vw;
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      .section {
+        position: absolute;
+        bottom: 0%;
+        width: 100vw;
+        height: 20vh;
+        background: white;
+        &:before {
+          content: " ";
+          position: absolute;
+          bottom: -100%;
+          background: $secondary;
+          right: -5%;
+          min-width: 300px;
+          min-height: 300px;
+          width: 25vw;
+          height: 25vw;
+          border-radius: 100% 100% 100% 100%;
+          z-index: 1;
+          box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76),
+            inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+        }
+      }
+      h1 {
+        font-size: 3.5em;
+        letter-spacing: 3px;
+        width: 100%;
+        margin-left: 5%;
+        z-index: 100;
+        z-index: 1000;
+      }
+      p {
+        margin-left: 5%;
+        /* font-family: poppins; */
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+        width: 60%;
+        margin-bottom: 5%;
+        z-index: 1000;
+      }
+      .img {
+        margin-left: 5%;
+        img {
+          width: 50%;
+          z-index: 1000;
+        }
+      }
+    }
+    .skills {
+      scroll-snap-align: start;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-left: 8%;
+      z-index: 1000;
+      h1 {
+        font-size: 3.5em;
+        z-index: 1000;
+      }
+      h2 {
+        font-size: 2.5em;
+        color: $secondary;
+        z-index: 1000;
+      }
+      
+      .img {
+        width: 90vw;
+
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+        img {
+          width: 25vw;
+          transform: rotate(45deg);
+          z-index: 1;
+          opacity: 0.9;
+        }
+      }
+      .section {
+        position: absolute;
+        top: 0%;
+        width: 100vw;
+        height: 20vh;
+        background: transparent;
+        &:before {
+          content: " ";
+          position: absolute;
+          top: -30%;
+          background: $secondary;
+          right: 30%;
+          min-width: 200px;
+          min-height: 200px;
+          width: 20vw;
+          height: 20vw;
+          border-radius: 100% 100% 100% 100%;
+          z-index: 1;
+          box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76),
+            inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+        }
+      }
+
+      ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: -60px;
+        z-index: 1000;
+        li {
+          float: left;
+          margin-left: 60px;
+          font-size: 1.5em;
+          z-index: 1000;
+          &:before {
+            content: "\2609";
+            color: $secondary;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.3em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+  }
+}
+.l1
+{
+ &:nth-child(1){ transition: 0.7s; &:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 100%";}}}
+ &:nth-child(2){ transition: 0.7s; &:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 60%";}}}
+ &:nth-child(3){ transition: 0.7s; &:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 70%";}}}
+ &:nth-child(4){ transition: 0.7s; &:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 50%";}}}
+ &:nth-child(5){ transition: 0.7s; &:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 75%";}}}
+}
+.l2
+{
+ &:nth-child(1){ transition: 0.7s; &:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 100%";}}}
+ &:nth-child(2){ transition: 0.7s; &:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 60%";}}}
+ &:nth-child(3){ transition: 0.7s; &:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 70%";}}}
+}
+.l3
+{
+ &:nth-child(1){ transition: 0.7s;&:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 70%";}}}
+ &:nth-child(2){ transition: 0.7s;&:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 80%";}}}
+ &:nth-child(3){ transition: 0.7s;&:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 60%";}}}
+ &:nth-child(4){ transition: 0.7s;&:hover{padding: 3px;background: rgb(0, 0, 0); color: white; cursor: pointer;&::after{content: " 70%";}}}
 }
 @media only screen and (max-width: 600px) {
-    .main{
-        transform: none;
+  .main {
+    transform: none;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: visible;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+
+    .wrapper {
+      transform: none;
+
+      .landing {
+        scroll-snap-align: start;
+        max-width: 100vw;
+        max-height: 100vh;
+
+        .name {
+          width: 100vw;
+          font-size: 1.5em;
+          &:first-letter {
+            font-size: 3em;
+          }
+        }
+        .job {
+          width: 100vw;
+          font-size: 1.3em;
+        }
+        .moon {
+          width: 65vw;
+          position: absolute;
+          left: 15vw;
+          margin-bottom: 15%;
+        }
+      }
+      .about {
+        max-width: 100vw;
+        max-height: 100vh;
+
+        .img {
+          img {
+            width: 90%;
+          }
+        }
+        h1 {
+          font-size: 2.5em;
+        }
+
+        p {
+          width: 90%;
+          font-size: 1.25em;
+          z-index: 100;
+        }
+        .section {
+          position: absolute;
+          bottom: 0%;
+
+          width: 100vw;
+          height: 20vh;
+          background: white;
+          display: none;
+          &:before {
+            bottom: -115%;
+
+            right: -5%;
+            min-width: 250px;
+            min-height: 250px;
+            width: 25vw;
+            height: 35vw;
+          }
+        }
+      }
+      .skills {
         width: 100vw;
-        height: 100vh;
-        overflow-x: visible;
-        overflow-y: hidden;
-        scroll-snap-type: x proximity;
-          
-        .wrapper
-        { transform: none;
+        padding-left: 10vw;
+        padding-bottom: 5vh;
+        .img {
+          display: none;
+        }
+        h2 {
+          font-size: 2em;
+        }
+        ul {
+          padding-left: 10px;
 
-        
-        .landing{
-            scroll-snap-align: start;
-            max-width: 100vw;
-            max-height: 100vh;
- 
-            .name{
-                width: 100vw;
-                font-size: 1.5em;
-                &:first-letter
-                {
-                    font-size: 3em;
-                }
-            }
-            .job 
-            {
-                width: 100vw;
-                font-size: 1.3em;
-            }
-             .moon
-            {
-            
-            
-            width: 65vw;
-            position: absolute;
-            left: 15vw;
-            margin-bottom: 15%;
-            
-    
-            } 
-            
+          a li {
+            margin-top: 15px;
+            font-size: 1.2em;
+          }
         }
-        .about
-        {
-        
-            max-width: 100vw;
-            max-height: 100vh;
-           
-            .img
-            {
-                img
-                {
-                    width: 90%;
-                }
-            } 
-            h1 {
-                font-size: 2.5em;
-            }
-
-            p {
-                width: 90%;
-                font-size: 1.25em;
-                z-index: 100;
-            }
-            .section {
-                position: absolute;
-                bottom: 0%;
-                
-                width: 100vw;
-                height: 20vh;
-                background:  white;
-                display: none;
-                &:before
-                {
-                   
-                    bottom: -115%;
-        
-                    right: -5%;
-                    min-width: 250px;
-                   min-height: 250px;
-                    width: 25vw;
-                    height: 35vw;
-                }
-            }
-            
-        }
-        .skills
-        {width: 100vw;
-            padding-left: 10vw;
-            padding-bottom: 5vh;
-            .img 
-            {
-                display: none;
-            }
-            h2
-            {
-                font-size: 2em;
-            }
-            ul 
-            {
-                padding-left: 10px;
-                
-                a
-                li 
-                {
-                    margin-top: 15px;
-                    font-size: 1.2em;
-                }
-            }
-        }
-        
+      }
     }
+  }
 }
-}
-@import 'connect';
-@import 'projects';
+@import "connect";
+@import "projects";

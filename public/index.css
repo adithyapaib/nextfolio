@@ -14,7 +14,7 @@
 .main {
   width: 100vw;
   height: 100vw;
-  background: #fdfffc;
+  background: #ffffff;
   -webkit-transform: rotate(-90deg) translateX(-100vh);
           transform: rotate(-90deg) translateX(-100vh);
   -webkit-transform-origin: top left;
@@ -87,7 +87,7 @@
   content: " ";
   position: absolute;
   bottom: -30%;
-  background: #ff0057;
+  background: #ce1212;
   left: -20%;
   min-width: 300px;
   min-height: 300px;
@@ -111,7 +111,7 @@
 }
 
 .main .wrapper .landing .name::first-letter {
-  color: #ff0057;
+  color: #ce1212;
   font-size: 3em;
   letter-spacing: 15px;
 }
@@ -173,7 +173,7 @@
   content: " ";
   position: absolute;
   bottom: -100%;
-  background: #ff0057;
+  background: #ce1212;
   right: -5%;
   min-width: 300px;
   min-height: 300px;
@@ -197,7 +197,7 @@
 .main .wrapper .about p {
   margin-left: 5%;
   /* font-family: poppins; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   width: 60%;
@@ -240,7 +240,7 @@
 
 .main .wrapper .skills h2 {
   font-size: 2.5em;
-  color: #ff0057;
+  color: #ce1212;
   z-index: 1000;
 }
 
@@ -277,7 +277,7 @@
   content: " ";
   position: absolute;
   top: -30%;
-  background: #ff0057;
+  background: #ce1212;
   right: 30%;
   min-width: 200px;
   min-height: 200px;
@@ -314,11 +314,203 @@
 
 .main .wrapper .skills ul li:before {
   content: "\2609";
-  color: #ff0057;
+  color: #ce1212;
   font-weight: bold;
   display: inline-block;
   width: 1.3em;
   margin-left: -1em;
+}
+
+.l1:nth-child(1) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l1:nth-child(1):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l1:nth-child(1):hover::after {
+  content: " 100%";
+}
+
+.l1:nth-child(2) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l1:nth-child(2):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l1:nth-child(2):hover::after {
+  content: " 60%";
+}
+
+.l1:nth-child(3) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l1:nth-child(3):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l1:nth-child(3):hover::after {
+  content: " 70%";
+}
+
+.l1:nth-child(4) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l1:nth-child(4):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l1:nth-child(4):hover::after {
+  content: " 50%";
+}
+
+.l1:nth-child(5) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l1:nth-child(5):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l1:nth-child(5):hover::after {
+  content: " 75%";
+}
+
+.l2:nth-child(1) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l2:nth-child(1):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l2:nth-child(1):hover::after {
+  content: " 100%";
+}
+
+.l2:nth-child(2) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l2:nth-child(2):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l2:nth-child(2):hover::after {
+  content: " 60%";
+}
+
+.l2:nth-child(3) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l2:nth-child(3):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l2:nth-child(3):hover::after {
+  content: " 70%";
+}
+
+.l3:nth-child(1) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l3:nth-child(1):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l3:nth-child(1):hover::after {
+  content: " 70%";
+}
+
+.l3:nth-child(2) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l3:nth-child(2):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l3:nth-child(2):hover::after {
+  content: " 80%";
+}
+
+.l3:nth-child(3) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l3:nth-child(3):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l3:nth-child(3):hover::after {
+  content: " 60%";
+}
+
+.l3:nth-child(4) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.l3:nth-child(4):hover {
+  padding: 3px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.l3:nth-child(4):hover::after {
+  content: " 70%";
 }
 
 @media only screen and (max-width: 600px) {
@@ -403,8 +595,7 @@
   .main .wrapper .skills ul {
     padding-left: 10px;
   }
-  .main .wrapper .skills ul a
-li {
+  .main .wrapper .skills ul a li {
     margin-top: 15px;
     font-size: 1.2em;
   }
@@ -463,13 +654,13 @@ li {
 }
 
 .main .wrapper .form input:hover, .main .wrapper .form input :focus, .main .wrapper .form textarea:hover, .main .wrapper .form textarea :focus {
-  border-bottom: 1px solid #ff0057;
+  border-bottom: 1px solid #ce1212;
 }
 
 .main .wrapper .form button {
   margin: 10px;
   padding: 0.8em 6em;
-  background: #ff0057;
+  background: #ce1212;
   border: none;
   color: white;
   border-radius: 10px;
@@ -519,7 +710,7 @@ li {
 }
 
 .main .wrapper ul li a {
-  color: #ff0057;
+  color: #ce1212;
   font-size: 2em;
 }
 
