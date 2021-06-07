@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 const listItems1 = user.skills[0].map((number) => <li className="l1">{number}</li>);
 const listItems2 = user.skills[1].map((number) => <li className="l2">{number}</li>);
 const listItems3 = user.skills[2].map((number) => <li className="l3">{number}</li>);
+const card = user.projects[0].map((p)=><li className="pcard"><iframe src={p} frameborder="0"></iframe></li>) 
 export default function Hello() {
   return <>
     <HEAD>
@@ -75,12 +76,11 @@ export default function Hello() {
           </div>
 
         </div>
-        {/* <div className='projects'>
+         <div className='projects'>
           <h1>Projects</h1>
-          {listItems4}
+          <ul>{card}</ul>
 
-
-        </div> */}
+        </div> 
       </div>
     </div>
   </>
