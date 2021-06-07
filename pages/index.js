@@ -2,10 +2,24 @@ import user from '../editthis';
 import HEAD from 'next/head';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import link from 'next/link';
 const listItems1 = user.skills[0].map((number) => <li className="l1">{number}</li>);
 const listItems2 = user.skills[1].map((number) => <li className="l2">{number}</li>);
 const listItems3 = user.skills[2].map((number) => <li className="l3">{number}</li>);
-const card = user.projects[0].map((p)=><li className="pcard"><iframe src={p} frameborder="0"></iframe></li>) 
+const cardtitles = user.projects[1];
+const cardLinks = user.projects[0];
+const cardDesc = user.projects[2];
+let i;
+let g =[];
+
+
+
+ for(i=0;i<cardLinks.length;i++)
+{
+ g[i] =  <li className="card"> <h2>{cardtitles[i]}</h2> <p>{cardDesc[i]} </p>  <a href={cardLinks[i]} className="visit">Visit</a> </li>
+} 
+
+console.log(g)
 export default function Hello() {
   return <>
     <HEAD>
@@ -76,9 +90,10 @@ export default function Hello() {
           </div>
 
         </div>
+        <section className="clip"/>
          <div className='projects'>
-          <h1>Projects</h1>
-          <ul>{card}</ul>
+          <p><h1>Projects</h1></p>
+           <ul>{g}</ul>
 
         </div> 
       </div>
