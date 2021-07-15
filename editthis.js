@@ -26,6 +26,7 @@ var site = {
         ['Decription', 'Decription', "Decription", "Decription"],
         
     ],
+    color: "#185ADB"
    
     
 }

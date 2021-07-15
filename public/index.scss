@@ -55,7 +55,6 @@ $secondary: #ce1212;
         top: 0;
         width: 100vw;
         height: 20vh;
-        background: white;
         &:before {
           content: " ";
           position: absolute;
@@ -93,6 +92,11 @@ $secondary: #ce1212;
         padding-left: 5%;
         margin-top: 25px;
         color: $primary;
+         &:after
+        {
+        content: " |";
+        animation:  blink 0.8s infinite alternate-reverse;
+        }
       }
       .lm {
         align-self: flex-start;
@@ -110,7 +114,6 @@ $secondary: #ce1212;
     }
     .about {
       scroll-snap-align: start;
-
       background: rgb(255, 255, 255);
       height: 100vh;
       width: 100vw;
@@ -126,6 +129,7 @@ $secondary: #ce1212;
         height: 20vh;
         background: white;
         &:before {
+          animation: glow 3s infinite alternate;
           content: " ";
           position: absolute;
           bottom: -100%;
@@ -285,6 +289,7 @@ $secondary: #ce1212;
       transform: none;
 
       .landing {
+        position: relative;
         scroll-snap-align: start;
         max-width: 100vw;
         max-height: 100vh;
@@ -301,10 +306,14 @@ $secondary: #ce1212;
           font-size: 1.3em;
         }
         .moon {
-          width: 65vw;
-          position: absolute;
-          left: 15vw;
-          margin-bottom: 15%;
+
+          position: absolute !important;
+          padding: 0;
+          bottom: 0% !important;
+          width: 100%;
+          left: 0;
+          height: unset;
+
         }
       }
       .about {
@@ -365,6 +374,30 @@ $secondary: #ce1212;
       }
     }
   }
+}
+@keyframes blink {
+  from
+  {
+    opacity: 0;
+  }
+  to 
+  {
+    opacity: 1;
+  }
+  
+}
+@keyframes glow {
+  from
+  {
+    box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76),
+    inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+  }
+  to 
+  {
+    box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76),
+    inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
+  }
+  
 }
 @import "connect";
 @import "projects";

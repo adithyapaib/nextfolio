@@ -81,7 +81,6 @@
   top: 0;
   width: 100vw;
   height: 20vh;
-  background: white;
 }
 
 .main .wrapper .landing .section:before {
@@ -125,6 +124,11 @@
   padding-left: 5%;
   margin-top: 25px;
   color: #000000;
+}
+
+.main .wrapper .landing .job:after {
+  content: " |";
+  animation: blink 0.8s infinite alternate-reverse;
 }
 
 .main .wrapper .landing .lm {
@@ -171,6 +175,8 @@
 }
 
 .main .wrapper .about .section:before {
+  -webkit-animation: glow 3s infinite alternate;
+          animation: glow 3s infinite alternate;
   content: " ";
   position: absolute;
   bottom: -100%;
@@ -328,7 +334,7 @@
 }
 
 .l1:nth-child(1):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -345,7 +351,7 @@
 }
 
 .l1:nth-child(2):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -362,7 +368,7 @@
 }
 
 .l1:nth-child(3):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -379,7 +385,7 @@
 }
 
 .l1:nth-child(4):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -396,7 +402,7 @@
 }
 
 .l1:nth-child(5):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -413,7 +419,7 @@
 }
 
 .l2:nth-child(1):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -430,7 +436,7 @@
 }
 
 .l2:nth-child(2):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -447,7 +453,7 @@
 }
 
 .l2:nth-child(3):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -464,7 +470,7 @@
 }
 
 .l3:nth-child(1):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -481,7 +487,7 @@
 }
 
 .l3:nth-child(2):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -498,7 +504,7 @@
 }
 
 .l3:nth-child(3):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -515,7 +521,7 @@
 }
 
 .l3:nth-child(4):hover {
-  padding: 5em;
+  padding: 2em;
   border-radius: 2em;
   background: black;
   color: white;
@@ -542,6 +548,7 @@
             transform: none;
   }
   .main .wrapper .landing {
+    position: relative;
     scroll-snap-align: start;
     max-width: 100vw;
     max-height: 100vh;
@@ -558,10 +565,12 @@
     font-size: 1.3em;
   }
   .main .wrapper .landing .moon {
-    width: 65vw;
-    position: absolute;
-    left: 15vw;
-    margin-bottom: 15%;
+    position: absolute !important;
+    padding: 0;
+    bottom: 0% !important;
+    width: 100%;
+    left: 0;
+    height: unset;
   }
   .main .wrapper .about {
     max-width: 100vw;
@@ -611,6 +620,46 @@
   .main .wrapper .skills ul a li {
     margin-top: 15px;
     font-size: 1.2em;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    -webkit-box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76), inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+            box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76), inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+  }
+  to {
+    -webkit-box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76), inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
+            box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76), inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
+  }
+}
+
+@keyframes glow {
+  from {
+    -webkit-box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76), inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+            box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76), inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+  }
+  to {
+    -webkit-box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76), inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
+            box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76), inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
   }
 }
 
