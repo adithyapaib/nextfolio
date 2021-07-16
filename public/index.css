@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: Adam;
@@ -104,15 +105,13 @@
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding-left: 5%;
-  font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
   letter-spacing: 10px;
 }
 
 .main .wrapper .landing .name::first-letter {
   color: #ce1212;
-  font-size: 3em;
+  font-size: 6.5em;
   letter-spacing: 15px;
 }
 
@@ -240,7 +239,7 @@
   z-index: 1000;
 }
 
-.main .wrapper .skills h1 {
+.main .wrapper .skills .h1 {
   font-size: 3.5em;
   z-index: 1000;
 }
@@ -264,7 +263,7 @@
   z-index: 1;
 }
 
-.main .wrapper .skills .img img {
+.main .wrapper .skills .img svg {
   width: 25vw;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -321,215 +320,11 @@
 
 .main .wrapper .skills ul li:before {
   content: "\2609";
-  color: #ce1212;
+  color: gold;
   font-weight: bold;
   display: inline-block;
   width: 1.3em;
   margin-left: -1em;
-}
-
-.l1:nth-child(1) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l1:nth-child(1):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l1:nth-child(1):hover::after {
-  content: " 100%";
-}
-
-.l1:nth-child(2) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l1:nth-child(2):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l1:nth-child(2):hover::after {
-  content: " 60%";
-}
-
-.l1:nth-child(3) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l1:nth-child(3):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l1:nth-child(3):hover::after {
-  content: " 70%";
-}
-
-.l1:nth-child(4) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l1:nth-child(4):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l1:nth-child(4):hover::after {
-  content: " 50%";
-}
-
-.l1:nth-child(5) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l1:nth-child(5):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l1:nth-child(5):hover::after {
-  content: " 65%";
-}
-
-.l2:nth-child(1) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l2:nth-child(1):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l2:nth-child(1):hover::after {
-  content: " 100%";
-}
-
-.l2:nth-child(2) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l2:nth-child(2):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l2:nth-child(2):hover::after {
-  content: " 60%";
-}
-
-.l2:nth-child(3) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l2:nth-child(3):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l2:nth-child(3):hover::after {
-  content: " 70%";
-}
-
-.l3:nth-child(1) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l3:nth-child(1):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l3:nth-child(1):hover::after {
-  content: " 70%";
-}
-
-.l3:nth-child(2) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l3:nth-child(2):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l3:nth-child(2):hover::after {
-  content: " 80%";
-}
-
-.l3:nth-child(3) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l3:nth-child(3):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l3:nth-child(3):hover::after {
-  content: " 60%";
-}
-
-.l3:nth-child(4) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.l3:nth-child(4):hover {
-  padding: 2em;
-  border-radius: 2em;
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.l3:nth-child(4):hover::after {
-  content: " 70%";
 }
 
 @media only screen and (max-width: 600px) {

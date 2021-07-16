@@ -3,37 +3,27 @@ import HEAD from "next/head";
 import Aos from "aos";
 import Landing from "../components/Landing";
 import About from "../components/About";
+import Skill from "../components/Skill";
 import "aos/dist/aos.css";
-import link from "next/link";
-const listItems1 = user.skills[0].map((number) => (
-  <li className="l1">{number}</li>
-));
-const listItems2 = user.skills[1].map((number) => (
-  <li className="l2">{number}</li>
-));
-const listItems3 = user.skills[2].map((number) => (
-  <li className="l3">{number}</li>
-));
+let g = [];
 const cardtitles = user.projects[1];
 const cardLinks = user.projects[0];
 const cardDesc = user.projects[2];
 let i;
-let g = [];
 
+  
+  for (let i = 0; i < cardLinks.length; i++) {
+    g[i] = (
+      <li className="card">
+        {" "}
+        <h2>{cardtitles[i]}</h2> <p>{cardDesc[i]} </p>{" "}
+        <a href={cardLinks[i]} className="visit">
+          Visit
+        </a>{" "}
+      </li>
+    );
+  }
 
-for (i = 0; i < cardLinks.length; i++) {
-  g[i] = (
-    <li className="card">
-      {" "}
-      <h2>{cardtitles[i]}</h2> <p>{cardDesc[i]} </p>{" "}
-      <a href={cardLinks[i]} className="visit">
-        Visit
-      </a>{" "}
-    </li>
-  );
-}
-
-console.log(g);
 export default function Hello() {
   return (
     <>
@@ -67,18 +57,9 @@ export default function Hello() {
         <div className="wrapper">
           <Landing />
          <About></About>
-          <div className="skills">
-            <h1>Skills</h1>
-            <h2>{user.skills_title[0]}</h2>
-            <ul>{listItems1}</ul>
-            <h2>{user.skills_title[1]}</h2>
-            <ul>{listItems2}</ul>
-            <h2>{user.skills_title[2]}</h2>
-            <ul>{listItems3}</ul>
-            <div className="img">
-              <img src="img/patternpad.svg" alt="pattern"></img>{" "}
-            </div>
-          </div>
+         <Skill></Skill>
+         
+          
           <div className="connect">
             <h1>Connect</h1>
             <ul>
