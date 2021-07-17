@@ -23,7 +23,9 @@ export default function Skill() {
           color: ${user.color};
         }
       `}</style>
-     <h1 className="h1">SKILLS <i class="bi bi-shield-shaded"></i></h1>
+      <h1 className="h1">
+        SKILLS <i class="bi bi-shield-shaded"></i>
+      </h1>
       <h2>{user.skills_title[0]}</h2>
       <ul>{listItems1}</ul>
       <h2>{user.skills_title[1]}</h2>
