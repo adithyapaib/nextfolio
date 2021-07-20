@@ -8,6 +8,8 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: bold;
   font-family: Adam;
   scroll-behavior: smooth;
@@ -96,8 +98,8 @@
   height: 35vw;
   border-radius: 100% 100% 100% 100%;
   z-index: 1;
-  -webkit-box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.76), inset -5px -5px 25px #00000062;
-          box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.76), inset -5px -5px 25px #00000062;
+  -webkit-box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.77), inset -5px -5px 25px #00000062;
+          box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.77), inset -5px -5px 25px #00000062;
 }
 
 .main .wrapper .landing .name {

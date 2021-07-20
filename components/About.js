@@ -1,4 +1,3 @@
-import React from "react";
 import user from "../editthis";
 export default function About() {
   return (

@@ -10,6 +10,7 @@ $secondary: #ce1212;
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-weight: bold;
   font-family: Adam;
   scroll-behavior: smooth;
@@ -67,7 +68,7 @@ $secondary: #ce1212;
           height: 35vw;
           border-radius: 100% 100% 100% 100%;
           z-index: 1;
-          box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.76),
+          box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.77),
             inset -5px -5px 25px #00000062;
         }
       }
@@ -112,7 +113,7 @@ $secondary: #ce1212;
     }
     .about {
       scroll-snap-align: start;
-      background: rgb(255, 255, 255);
+      background: white;
       height: 100vh;
       width: 100vw;
       color: rgb(0, 0, 0);
