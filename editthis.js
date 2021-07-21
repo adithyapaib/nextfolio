@@ -26,6 +26,7 @@ var site = {
         ['Decription', 'Decription', "Decription", "Decription"],
         
     ],
+    //Web site color scheme
     color: "#185ADB"
    
     
