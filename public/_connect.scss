@@ -1,157 +1,130 @@
-.main
-{
-    .wrapper
-    {
-        .connect
-        {
-            scroll-snap-align: start;
-            padding-left: 10vw;
-            padding-top: 5vh;
-            width: 100vw;
-            height: 100vh;
-            background: rgb(255, 255, 255);
-            font-size: 1.5em;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            flex-wrap: wrap;
-
-        }
-        .form
-        {
-            width: 90vw;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-            input, textarea
-            {
-                font-size: 1em;
-                margin-bottom: 50px;
-                margin: 10px;
-                padding: 10px 5px 5px 10px;
-                outline: none;
-                border: none;
-                margin-bottom: 50px;
-                border-bottom: 1px solid black;
-                width: 500px;
-                max-width: 70vw;
-                &:hover,:focus
-                {
-                   border-bottom: 1px solid $secondary;
-                }
-            }
-            button 
-            {
-                margin: 10px;
-                padding: 0.8em 6em;
-                background: $secondary;
-                border: none;
-                color: white;
-                border-radius: 10px;
-                font-size: 0.8em;
-                cursor: pointer;
-                &:hover, &:focus-visible{
-                    background: #000;
-                    outline: none;
-                    border: none;
-                }
-            }
-        }
-        .img-social
-        {
-           
-           display: flex;
-           justify-content: flex-end;
-           width: 80vw;
-           position: absolute;
-           img 
-           {
-               width: 20vw;
-             
-           }
-    
-            
-        }
-        ul 
-        {
-            list-style: none;
-            display: flex;
-            width: 100vw;
-            flex-wrap: wrap;
-            justify-content:  flex-start;
-            li 
-            {
-                float: left;
-                border-radius: 100px;
-                margin-top: 1em;
-                margin-left: 1em;
-              a
-              {
-                   color: $secondary;
-                   font-size: 2em;
-                   &:hover
-                   {
-                       color: black;
-                   }
-              } 
-               
-            }
-        }
+.main {
+  .wrapper {
+     
+    .connect {
+      scroll-snap-align: start;
+      padding-left: 10vw;
+      padding-top: 5vh;
+      width: 100vw;
+      height: 100vh;
+      background: rgb(255, 255, 255);
+      font-size: 1.5em;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
+    .form {
+      width: 90vw;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      input,
+      textarea {
+        font-size: 1em;
+        margin-bottom: 50px;
+        margin: 10px;
+        padding: 10px 5px 5px 10px;
+        outline: none;
+        border: none;
+        margin-bottom: 50px;
+        border-bottom: 1px solid black;
+        width: 500px;
+        max-width: 70vw;
+        &:hover,
+        :focus {
+          border-bottom: 1px solid $secondary;
+        }
+      }
+      button {
+        margin: 10px;
+        padding: 0.8em 6em;
+        background: $secondary;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        font-size: 0.8em;
+        cursor: pointer;
+        &:hover,
+        &:focus-visible {
+          background: #000;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+    .img-social {
+      display: flex;
+      justify-content: flex-end;
+      width: 80vw;
+      position: absolute;
+      img {
+        width: 20vw;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      width: 100vw;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      li {
+        float: left;
+        border-radius: 100px;
+        margin-top: 1em;
+        margin-left: 1em;
+        a {
+          color: $secondary;
+          font-size: 2em;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
 }
-@media only screen and (max-width: 600px)
-{
-    .main
-    {
-        .wrapper
-        {
-            .connect
-            {
-                padding-bottom: 5%;
-               h1
-               {
-                   font-size: 1.8em;
-               }
-               h2 
-               {
-                   font-size: 1.25em;
-               }
-               ul 
-               {
-                   li 
-                   {
-                       a 
-                       {
-                           font-size: 1.6em;
-                       }
-                   }
-               }
-               .img-social
-               {
-                   display: none;
-               }
-               .form
-               {
-                   label 
-                   {
-                    font-size: 0.7em;
-                   }
-                   input, textarea{
-                       width: 70vw;
-                       font-size: 0.7em;
-                       margin-bottom: 2.3em;
-                   }
-                   button 
-                   {
-                       width: 35vw;
-                       height: 10vw;
-                       font-size: 0.7em;
-                       padding: 0;
-                   }
-               }
-            }
+@media only screen and (max-width: 600px) {
+  .main {
+    .wrapper {
+      .connect {
+        padding-bottom: 5%;
+        h1 {
+          font-size: 1.8em;
         }
+        h2 {
+          font-size: 1.25em;
+        }
+        ul {
+          li {
+            a {
+              font-size: 1.6em;
+            }
+          }
+        }
+        .img-social {
+          display: none;
+        }
+        .form {
+          label {
+            font-size: 0.7em;
+          }
+          input,
+          textarea {
+            width: 70vw;
+            font-size: 0.7em;
+            margin-bottom: 2.3em;
+          }
+          button {
+            width: 35vw;
+            height: 10vw;
+            font-size: 0.7em;
+            padding: 0;
+          }
+        }
+      }
     }
+  }
 }
