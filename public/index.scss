@@ -78,6 +78,7 @@ $secondary: #ce1212;
         padding-left: 5%;
         text-transform: uppercase;
         letter-spacing: 10px;
+        font-size: 3.5em;
         &::first-letter {
           color: $secondary;
           font-size: 6.5em;
@@ -276,7 +277,7 @@ $secondary: #ce1212;
 
         .name {
           width: 100vw;
-          font-size: 1.5em;
+          font-size: 1.5em !important;
           &:first-letter {
             font-size: 3em;
           }
@@ -288,9 +289,11 @@ $secondary: #ce1212;
         .moon {
 
           position: absolute !important;
+          margin-left: 2em;
+          margin-bottom: 1em;
           padding: 0;
           bottom: 0% !important;
-          width: 100%;
+          width: 70%;
           left: 0;
           height: unset;
 
@@ -340,15 +343,21 @@ $secondary: #ce1212;
         .img {
           display: none;
         }
-        h2 {
+        .h1 {
           font-size: 2em;
+
+        }
+        h2 
+        {
+          font-size: 1.8em;
+          margin-top: 1em;
         }
         ul {
           padding-left: 10px;
 
-          a li {
+           li {
             margin-top: 15px;
-            font-size: 1.2em;
+            font-size: 1.3em;
           }
         }
       }

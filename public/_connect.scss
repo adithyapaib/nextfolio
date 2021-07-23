@@ -15,11 +15,13 @@
       flex-direction: column;
       flex-wrap: wrap;
     }
+
     .form {
       width: 90vw;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
+      z-index: 10000;
       flex-direction: column;
       input,
       textarea {
@@ -60,6 +62,7 @@
       justify-content: flex-end;
       width: 80vw;
       position: absolute;
+      z-index: 0;
       img {
         width: 20vw;
       }
@@ -70,13 +73,15 @@
       width: 100vw;
       flex-wrap: wrap;
       justify-content: flex-start;
+      z-index: 0022;
       li {
         float: left;
         border-radius: 100px;
         margin-top: 1em;
         margin-left: 1em;
+        z-index: 5;
         a {
-          color: $secondary;
+          color: $secondary;z-index: 100;
           font-size: 2em;
           &:hover {
             color: black;
@@ -107,9 +112,17 @@
         .img-social {
           display: none;
         }
+        h2
+        {
+ margin-top: 2em;
+
+
+        }
         .form {
+          margin-top: 1em;
           label {
             font-size: 0.7em;
+            margin-left: 0.5em;
           }
           input,
           textarea {

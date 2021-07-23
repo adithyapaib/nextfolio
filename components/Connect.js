@@ -7,9 +7,7 @@ export default function () {
         .main .wrapper .connect h1::first-letter {
           color: ${user.color};
         }
-        .main .wrapper .connect h1 {
-          font-size: 3.5em;
-        }
+
         .main .wrapper .connect ul li a {
           color: ${user.color};
         }

@@ -108,6 +108,7 @@
   padding-left: 5%;
   text-transform: uppercase;
   letter-spacing: 10px;
+  font-size: 3.5em;
 }
 
 .main .wrapper .landing .name::first-letter {
@@ -352,7 +353,7 @@
   }
   .main .wrapper .landing .name {
     width: 100vw;
-    font-size: 1.5em;
+    font-size: 1.5em !important;
   }
   .main .wrapper .landing .name:first-letter {
     font-size: 3em;
@@ -363,9 +364,11 @@
   }
   .main .wrapper .landing .moon {
     position: absolute !important;
+    margin-left: 2em;
+    margin-bottom: 1em;
     padding: 0;
     bottom: 0% !important;
-    width: 100%;
+    width: 70%;
     left: 0;
     height: unset;
   }
@@ -408,15 +411,19 @@
   .main .wrapper .skills .img {
     display: none;
   }
-  .main .wrapper .skills h2 {
+  .main .wrapper .skills .h1 {
     font-size: 2em;
+  }
+  .main .wrapper .skills h2 {
+    font-size: 1.8em;
+    margin-top: 1em;
   }
   .main .wrapper .skills ul {
     padding-left: 10px;
   }
-  .main .wrapper .skills ul a li {
+  .main .wrapper .skills ul li {
     margin-top: 15px;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
@@ -515,6 +522,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 10000;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -568,6 +576,7 @@
           justify-content: flex-end;
   width: 80vw;
   position: absolute;
+  z-index: 0;
 }
 
 .main .wrapper .img-social img {
@@ -585,6 +594,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  z-index: 0022;
 }
 
 .main .wrapper ul li {
@@ -592,10 +602,12 @@
   border-radius: 100px;
   margin-top: 1em;
   margin-left: 1em;
+  z-index: 5;
 }
 
 .main .wrapper ul li a {
   color: #ce1212;
+  z-index: 100;
   font-size: 2em;
 }
 
@@ -619,8 +631,15 @@
   .main .wrapper .connect .img-social {
     display: none;
   }
+  .main .wrapper .connect h2 {
+    margin-top: 2em;
+  }
+  .main .wrapper .connect .form {
+    margin-top: 1em;
+  }
   .main .wrapper .connect .form label {
     font-size: 0.7em;
+    margin-left: 0.5em;
   }
   .main .wrapper .connect .form input,
   .main .wrapper .connect .form textarea {
