@@ -253,7 +253,7 @@
 }
 
 .main .wrapper .skills .img {
-  width: 90vw;
+  width: 70vw;
   position: absolute;
   top: 0;
   display: -webkit-box;
@@ -266,11 +266,12 @@
 }
 
 .main .wrapper .skills .img svg {
-  width: 25vw;
+  width: 20vw;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-animation: r 200s infinite linear;
+          animation: r 200s infinite linear;
   z-index: 1;
-  opacity: 0.9;
 }
 
 .main .wrapper .skills .section {
@@ -435,6 +436,28 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes r {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes r {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

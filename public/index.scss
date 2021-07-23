@@ -192,18 +192,17 @@ $secondary: #ce1212;
       }
       
       .img {
-        width: 90vw;
-
+        width: 70vw;
         position: absolute;
         top: 0;
         display: flex;
         justify-content: flex-end;
         z-index: 1;
         svg {
-          width: 25vw;
+          width: 20vw;
           transform: rotate(45deg);
+          animation: r 200s infinite linear;
           z-index: 1;
-          opacity: 0.9;
         }
       }
       .section {
@@ -366,6 +365,16 @@ $secondary: #ce1212;
     opacity: 1;
   }
   
+}
+@keyframes r {
+  from
+  {
+    transform: rotate(0deg);
+  }
+  from
+  {
+    transform: rotate(360deg);
+  }
 }
 @keyframes glow {
   from
