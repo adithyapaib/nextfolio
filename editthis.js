@@ -1,6 +1,6 @@
 var site = {
       /* Your name */
-    name : 'Adithya Pai B',
+    name : 'Adithya Pai',
     job: 'Front-End Developer',
        /* This decription is used both in meta tag and about page */
     description: `Hi there! I am Adithya Pai B from Mangalore, India.
@@ -27,7 +27,7 @@ var site = {
         
     ],
     //Web site color scheme
-    color: "#185ADB"
+    color: "#5557D6"
    
     
 }

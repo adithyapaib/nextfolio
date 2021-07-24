@@ -6,7 +6,12 @@
 $bg: #ffffff;
 $primary: #000000;
 $secondary: #ce1212;
-
+@media (prefers-color-scheme: dark) {
+  .main {
+    background: #080808;
+    color: #fff;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -41,219 +46,6 @@ $secondary: #ce1212;
     max-width: auto;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    .landing {
-      scroll-snap-align: start;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .section {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 20vh;
-        &:before {
-          content: " ";
-          position: absolute;
-          bottom: -30%;
-          background: $secondary;
-          left: -20%;
-          min-width: 300px;
-          min-height: 300px;
-          width: 35vw;
-          height: 35vw;
-          border-radius: 100% 100% 100% 100%;
-          z-index: 1;
-          box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.77),
-            inset -5px -5px 25px #00000062;
-        }
-      }
-      .name {
-        text-align: left;
-        align-self: flex-start;
-        padding-left: 5%;
-        text-transform: uppercase;
-        letter-spacing: 10px;
-        font-size: 3.5em;
-        &::first-letter {
-          color: $secondary;
-          font-size: 6.5em;
-          letter-spacing: 15px;
-        }
-      }
-      .job {
-        align-self: flex-start;
-        text-align: left;
-        align-self: flex-start;
-        padding-left: 5%;
-        margin-top: 25px;
-        color: $primary;
-         &:after
-        {
-        content: " |";
-        animation:  blink 0.8s infinite alternate-reverse;
-        }
-      }
-      .lm {
-        align-self: flex-start;
-        text-align: left;
-        align-self: flex-start;
-        padding-left: 5%;
-        margin-top: 25px;
-      }
-      .moon {
-        width: 40vw;
-        position: absolute;
-        left: 100vw-41vw;
-        bottom: 0;
-      }
-    }
-    .about {
-      scroll-snap-align: start;
-      background: white;
-      height: 100vh;
-      width: 100vw;
-      color: rgb(0, 0, 0);
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: wrap;
-      .section {
-        position: absolute;
-        bottom: 0%;
-        width: 100vw;
-        height: 20vh;
-        background: white;
-        &:before {
-          animation: glow 3s infinite alternate;
-          content: " ";
-          position: absolute;
-          bottom: -100%;
-          background: $secondary;
-          right: -5%;
-          min-width: 300px;
-          min-height: 300px;
-          width: 25vw;
-          height: 25vw;
-          border-radius: 100% 100% 100% 100%;
-          z-index: 1;
-          box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76),
-            inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
-        }
-      }
-      h1 {
-        font-size: 3.5em;
-        letter-spacing: 3px;
-        width: 100%;
-        margin-left: 5%;
-        z-index: 100;
-        z-index: 1000;
-      }
-      p {
-        margin-left: 5%;
-        /* font-family: poppins; */
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        font-size: 1.5em;
-        width: 60%;
-        margin-bottom: 5%;
-        z-index: 1000;
-      }
-      .img {
-        margin-left: 5%;
-        img {
-          width: 50%;
-          z-index: 1000;
-        }
-      }
-    }
-    .skills {
-      scroll-snap-align: start;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding-left: 8%;
-      z-index: 1000;
-     
-      .h1 {
-        font-size: 3.5em;
-        z-index: 1000;
-      }
-      h2 {
-        font-size: 2.5em;
-        color: $secondary;
-        z-index: 1000;
-      }
-      
-      .img {
-        width: 70vw;
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: flex-end;
-        z-index: 1;
-        svg {
-          width: 20vw;
-          transform: rotate(45deg);
-          animation: r 200s infinite linear;
-          z-index: 1;
-        }
-      }
-      .section {
-        position: absolute;
-        top: 0%;
-        width: 100vw;
-        height: 20vh;
-        background: transparent;
-        &:before {
-          content: " ";
-          position: absolute;
-          top: -30%;
-          background: $secondary;
-          right: 30%;
-          min-width: 200px;
-          min-height: 200px;
-          width: 20vw;
-          height: 20vw;
-          border-radius: 100% 100% 100% 100%;
-          z-index: 1;
-          box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76),
-            inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
-        }
-      }
-
-      ul {
-        list-style: none;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-left: -60px;
-        z-index: 1000;
-        li {
-          float: left;
-          margin-left: 60px;
-          font-size: 1.5em;
-          z-index: 1000;
-          &:before {
-            content: "\2609";
-            color: gold;
-            font-weight: bold;
-            display: inline-block;
-            width: 1.3em;
-            margin-left: -1em;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -268,74 +60,6 @@ $secondary: #ce1212;
 
     .wrapper {
       transform: none;
-
-      .landing {
-        position: relative;
-        scroll-snap-align: start;
-        max-width: 100vw;
-        max-height: 100vh;
-
-        .name {
-          width: 100vw;
-          font-size: 1.5em !important;
-          &:first-letter {
-            font-size: 3em;
-          }
-        }
-        .job {
-          width: 100vw;
-          font-size: 1.3em;
-        }
-        .moon {
-
-          position: absolute !important;
-          margin-left: 2em;
-          margin-bottom: 1em;
-          padding: 0;
-          bottom: 0% !important;
-          width: 70%;
-          left: 0;
-          height: unset;
-
-        }
-      }
-      .about {
-        max-width: 100vw;
-        max-height: 100vh;
-
-        .img {
-          img {
-            width: 90%;
-          }
-        }
-        h1 {
-          font-size: 2.5em;
-        }
-
-        p {
-          width: 90%;
-          font-size: 1.25em;
-          z-index: 100;
-        }
-        .section {
-          position: absolute;
-          bottom: 0%;
-
-          width: 100vw;
-          height: 20vh;
-          background: white;
-          display: none;
-          &:before {
-            bottom: -115%;
-
-            right: -5%;
-            min-width: 250px;
-            min-height: 250px;
-            width: 25vw;
-            height: 35vw;
-          }
-        }
-      }
       .skills {
         width: 100vw;
         padding-left: 10vw;
@@ -345,17 +69,15 @@ $secondary: #ce1212;
         }
         .h1 {
           font-size: 2em;
-
         }
-        h2 
-        {
+        h2 {
           font-size: 1.8em;
           margin-top: 1em;
         }
         ul {
           padding-left: 10px;
 
-           li {
+          li {
             margin-top: 15px;
             font-size: 1.3em;
           }
@@ -365,39 +87,34 @@ $secondary: #ce1212;
   }
 }
 @keyframes blink {
-  from
-  {
+  from {
     opacity: 0;
   }
-  to 
-  {
+  to {
     opacity: 1;
   }
-  
 }
 @keyframes r {
-  from
-  {
+  from {
     transform: rotate(0deg);
   }
-  from
-  {
+  from {
     transform: rotate(360deg);
   }
 }
 @keyframes glow {
-  from
-  {
+  from {
     box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76),
-    inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+      inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
   }
-  to 
-  {
+  to {
     box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76),
-    inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
+      inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
   }
-  
 }
+@import "about";
+@import "landing";
+@import "skills";
 @import "connect";
 @import "projects";
 @import "navbar";

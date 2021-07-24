@@ -1,0 +1,104 @@
+.main .wrapper {
+  .landing {
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .section {
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 20vh;
+      &:before {
+        content: " ";
+        position: absolute;
+        bottom: -30%;
+        background: $secondary;
+        left: -20%;
+        min-width: 300px;
+        min-height: 300px;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 100% 100% 100% 100%;
+        z-index: 1;
+        box-shadow: 5px 5px 13px rgba(126, 126, 126, 0.77),
+          inset -5px -5px 25px #00000062;
+      }
+    }
+    .name {
+      text-align: left;
+      align-self: flex-start;
+      padding-left: 5%;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 2.5em;
+      &::first-letter {
+        color: $secondary;
+        font-size: 6.5em;
+        letter-spacing: 15px;
+      }
+    }
+    .job {
+      align-self: flex-start;
+      text-align: left;
+      align-self: flex-start;
+      padding-left: 5%;
+      margin-top: 25px;
+      &:after {
+        content: " |";
+        animation: blink 0.8s infinite alternate-reverse;
+      }
+    }
+    .lm {
+      align-self: flex-start;
+      text-align: left;
+      align-self: flex-start;
+      padding-left: 5%;
+      margin-top: 25px;
+    }
+    .moon {
+      width: 40vw;
+      position: absolute;
+      left: 100vw-41vw;
+      bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main .wrapper {
+    .landing {
+      position: relative;
+      scroll-snap-align: start;
+      max-width: 100vw;
+      max-height: 100vh;
+
+      .name {
+        width: 100vw;
+        font-size: 1.5em !important;
+        &:first-letter {
+          font-size: 3em;
+        }
+      }
+      .job {
+        width: 100vw;
+        font-size: 1.3em;
+      }
+      .moon {
+        position: absolute !important;
+        margin-left: 2em;
+        margin-bottom: 1em;
+        padding: 0;
+        bottom: 0% !important;
+        width: 70%;
+        left: 0;
+        height: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.main .wrapper {
+  .skills {
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    z-index: 1000;
+
+    .h1 {
+      font-size: 3.5em;
+      z-index: 1000;
+    }
+    h2 {
+      font-size: 2.5em;
+      color: $secondary;
+      z-index: 1000;
+    }
+
+    .img {
+      width: 70vw;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: flex-end;
+      z-index: 1;
+      svg {
+        width: 20vw;
+        transform: rotate(45deg);
+        animation: r 200s infinite linear;
+        z-index: 1;
+      }
+    }
+    .section {
+      position: absolute;
+      top: 0%;
+      width: 100vw;
+      height: 20vh;
+      background: transparent;
+      &:before {
+        content: " ";
+        position: absolute;
+        top: -30%;
+        background: $secondary;
+        right: 30%;
+        min-width: 200px;
+        min-height: 200px;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 100% 100% 100% 100%;
+        z-index: 1;
+        box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76),
+          inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+      }
+    }
+
+    ul {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: -60px;
+      z-index: 1000;
+      li {
+        float: left;
+        margin-left: 60px;
+        font-size: 1.5em;
+        z-index: 1000;
+        &:before {
+          content: "\2609";
+          color: gold;
+          font-weight: bold;
+          display: inline-block;
+          width: 1.3em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}
