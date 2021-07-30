@@ -13,6 +13,10 @@
     -webkit-box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000062;
             box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000062;
   }
+  .main .wrapper .about .section {
+    -webkit-box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000093;
+            box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000093;
+  }
 }
 
 * {
@@ -195,8 +199,7 @@
 }
 
 .main .wrapper .about .section:before {
-  -webkit-animation: glow 3s infinite alternate;
-          animation: glow 3s infinite alternate;
+  /* animation: glow 3s infinite alternate; */
   content: " ";
   position: absolute;
   bottom: -100%;
@@ -444,6 +447,7 @@
   -webkit-animation: r 200s infinite linear;
           animation: r 200s infinite linear;
   z-index: 1;
+  background: red;
 }
 
 .main .wrapper .skills .section {
@@ -543,7 +547,7 @@
 
 .main .wrapper .form input,
 .main .wrapper .form textarea {
-  border-radius: 5px;
+  border-radius: 1px;
   font-size: 1em;
   margin-bottom: 50px;
   margin: 10px;
@@ -569,7 +573,7 @@
   background: #e20000;
   border: none;
   color: white;
-  border-radius: 10px;
+  border-radius: 6px;
   font-size: 0.8em;
   cursor: pointer;
 }

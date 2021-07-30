@@ -11,14 +11,20 @@ $secondary: #e20000;
     background: #080808;
     color: #ffffff;
     .wrapper {
-      .landing 
-      {
-        .section
-        {
-          
-          box-shadow:  5px 5px 13px rgba(78, 78, 78, 0.288),
-          inset -5px -5px 25px #00000062;
+      .landing {
+        .section {
+          box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288),
+            inset -5px -5px 25px #00000062;
         }
+      }
+      .about
+      {
+        .section {
+          box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288),
+          inset -5px -5px 25px #00000093;
+
+        }
+
       }
     }
   }

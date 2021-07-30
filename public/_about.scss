@@ -14,7 +14,7 @@
           width: 100vw;
           height: 20vh;
           &:before {
-            animation: glow 3s infinite alternate;
+            /* animation: glow 3s infinite alternate; */
             content: " ";
             position: absolute;
             bottom: -100%;
@@ -28,6 +28,7 @@
             z-index: 1;
             box-shadow: -5px -5px 13px rgba(126, 126, 126, 0.76),
               inset 5px 5px 25px #00000062, 3px 5px 25px #313131ee;
+             
           }
         }
         h1 {
