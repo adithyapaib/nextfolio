@@ -7,7 +7,11 @@
 @media (prefers-color-scheme: dark) {
   .main {
     background: #080808;
-    color: #fff;
+    color: #ffffff;
+  }
+  .main .wrapper .landing .section {
+    -webkit-box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000062;
+            box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000062;
   }
 }
 
@@ -24,7 +28,8 @@
 .main {
   width: 100vw;
   height: 100vw;
-  background: #ffffff;
+  color: #000000;
+  background: #fff;
   -webkit-transform: rotate(-90deg) translateX(-100vh);
           transform: rotate(-90deg) translateX(-100vh);
   -webkit-transform-origin: top left;
@@ -195,7 +200,7 @@
   content: " ";
   position: absolute;
   bottom: -100%;
-  background: #ce1212;
+  background: #e20000;
   right: -5%;
   min-width: 300px;
   min-height: 300px;
@@ -301,7 +306,7 @@
   content: " ";
   position: absolute;
   bottom: -30%;
-  background: #ce1212;
+  background: #e20000;
   left: -20%;
   min-width: 300px;
   min-height: 300px;
@@ -324,7 +329,7 @@
 }
 
 .main .wrapper .landing .name::first-letter {
-  color: #ce1212;
+  color: #e20000;
   font-size: 6.5em;
   letter-spacing: 15px;
 }
@@ -415,7 +420,7 @@
 
 .main .wrapper .skills h2 {
   font-size: 2.5em;
-  color: #ce1212;
+  color: #e20000;
   z-index: 1000;
 }
 
@@ -453,7 +458,7 @@
   content: " ";
   position: absolute;
   top: -30%;
-  background: #ce1212;
+  background: #e20000;
   right: 30%;
   min-width: 200px;
   min-height: 200px;
@@ -555,13 +560,13 @@
 .main .wrapper .form input :focus,
 .main .wrapper .form textarea:hover,
 .main .wrapper .form textarea :focus {
-  border-bottom: 1px solid #ce1212;
+  border-bottom: 1px solid #e20000;
 }
 
 .main .wrapper .form button {
   margin: 10px;
   padding: 0.8em 6em;
-  background: #ce1212;
+  background: #e20000;
   border: none;
   color: white;
   border-radius: 10px;
@@ -614,7 +619,7 @@
 }
 
 .main .wrapper ul li a {
-  color: #ce1212;
+  color: #e20000;
   z-index: 100;
   font-size: 2em;
 }

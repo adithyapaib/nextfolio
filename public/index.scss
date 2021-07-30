@@ -3,13 +3,24 @@
   font-family: Adam;
   src: url("../font/Adam.otf") format("opentype");
 }
-$bg: #ffffff;
+$bg: #fff;
 $primary: #000000;
 $secondary: #e20000;
 @media (prefers-color-scheme: dark) {
   .main {
     background: #080808;
     color: #ffffff;
+    .wrapper {
+      .landing 
+      {
+        .section
+        {
+          
+          box-shadow:  5px 5px 13px rgba(78, 78, 78, 0.288),
+          inset -5px -5px 25px #00000062;
+        }
+      }
+    }
   }
 }
 * {
