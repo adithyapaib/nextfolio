@@ -3,32 +3,10 @@
   font-family: Adam;
   src: url("../font/Adam.otf") format("opentype");
 }
-$bg: #fff;
+$bg: #ffffff;
 $primary: #000000;
 $secondary: #e20000;
-@media (prefers-color-scheme: dark) {
-  .main {
-    background: #080808;
-    color: #ffffff;
-    .wrapper {
-      .landing {
-        .section {
-          box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288),
-            inset -5px -5px 25px #00000062;
-        }
-      }
-      .about
-      {
-        .section {
-          box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288),
-          inset -5px -5px 25px #00000093;
 
-        }
-
-      }
-    }
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -128,6 +106,12 @@ $secondary: #e20000;
   to {
     box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76),
       inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .main {
+    background: #080808;
+    color: #ffffff;
   }
 }
 @import "about";
