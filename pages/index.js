@@ -51,7 +51,7 @@ export default function Hello() {
         <link
           rel="shortcut icon"
           type="image/png"
-          href="https://img.icons8.com/windows/32/000000/code.png"
+          href="https://img.icons8.com/emoji/32/000000/alien-monster-emoji.png"
         />
       </HEAD>
       <div className="main">
