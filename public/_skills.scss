@@ -84,3 +84,25 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .main .wrapper {
+    .skills {
+      padding-left: 3%;
+      .h1 {
+        font-size: 2.1em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      ul
+    {
+      font-size: 0.9em;
+    }
+    .img
+    {
+      display: none !important;
+    }
+  }
+}
+}

@@ -4,21 +4,6 @@
   src: url("../font/Adam.otf") format("opentype");
 }
 
-@media (prefers-color-scheme: dark) {
-  .main {
-    background: #080808;
-    color: #ffffff;
-  }
-  .main .wrapper .landing .section {
-    -webkit-box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000062;
-            box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000062;
-  }
-  .main .wrapper .about .section {
-    -webkit-box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000093;
-            box-shadow: 5px 5px 13px rgba(78, 78, 78, 0.288), inset -5px -5px 25px #00000093;
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -33,7 +18,7 @@
   width: 100vw;
   height: 100vw;
   color: #000000;
-  background: #fff;
+  background: #ffffff;
   -webkit-transform: rotate(-90deg) translateX(-100vh);
           transform: rotate(-90deg) translateX(-100vh);
   -webkit-transform-origin: top left;
@@ -171,6 +156,13 @@
   to {
     -webkit-box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76), inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
             box-shadow: -5px -5px 13px rgba(255, 255, 255, 0.76), inset -5px -5px 25px #00000062, -3px -5px 25px #ffffffee;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .main {
+    background: #080808;
+    color: #ffffff;
   }
 }
 
@@ -504,6 +496,24 @@
   display: inline-block;
   width: 1.3em;
   margin-left: -1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .main .wrapper .skills {
+    padding-left: 3%;
+  }
+  .main .wrapper .skills .h1 {
+    font-size: 2.1em;
+  }
+  .main .wrapper .skills h2 {
+    font-size: 1.5em;
+  }
+  .main .wrapper .skills ul {
+    font-size: 0.9em;
+  }
+  .main .wrapper .skills .img {
+    display: none !important;
+  }
 }
 
 .main .wrapper .connect {
