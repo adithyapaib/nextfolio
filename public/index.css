@@ -389,6 +389,13 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  .main .wrapper .landing .section:before {
+    -webkit-box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.575), inset -5px -5px 25px #1f1f1fa2;
+            box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.575), inset -5px -5px 25px #1f1f1fa2;
+  }
+}
+
 .main .wrapper .skills {
   scroll-snap-align: start;
   width: 100vw;
