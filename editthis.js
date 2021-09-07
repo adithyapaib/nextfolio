@@ -27,7 +27,7 @@ var site = {
         
     ],
     //Web site color scheme
-    color: "#FF2626"
+    color: "#2D46B9"
    
     
 }
