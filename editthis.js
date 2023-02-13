@@ -13,12 +13,10 @@ var site = {
     social: {
         /* Add your social media links here */
         github: 'https://github.com/Tanisha01-small',
-        twitter: 'https://twitter.com/adithyapaib',
         linkedin: 'http://www.linkedin.com/in/tanisha01singhal',
         mail: 'mailto: email@gmail.com',
-        instagram: 'https://instagram.com'
     },
-    form: 'https://formsubmit.co/email@gmail.com',
+    form: 'https://forms.gle/WpzVyKK9b7UsXfY8A',
     /* DONT FOR GET TO ACTIVATE UR EMAIL AFTER SETTING UP THE FORM TO RECEIVE EMAILS */
     projects: [
         ["https://google.com", 'https://github.com/adithyapaib/portfolio-template',"https://github.com/adithyapaib/portfolio-template", "https://github.com/adithyapaib/portfolio-template"],
