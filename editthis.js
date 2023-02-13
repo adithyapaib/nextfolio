@@ -1,6 +1,6 @@
 var site = {
       /* Your name */
-    name : 'Adithya Pai',
+    name : 'Tanisha Singhal',
     job: 'Front-End Developer',
        /* This decription is used both in meta tag and about page */
     description: `Hi there! I am Adithya Pai B from Mangalore, India.
